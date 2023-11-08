@@ -1,0 +1,439 @@
+
+@media screen and (max-width: 768px)  {
+.main_ttl_box .more_view_btn{
+    font-size: 1rem;
+}
+
+.main_ttl{
+    margin-bottom: 1.7857rem;
+    font-size: 1.5rem;
+}
+.main_ttl.point span::after{
+    top: 0;
+    left: calc(100% + .2857rem);
+    width: .5rem;
+    height: .4286rem;
+    border-radius: 0 .2143rem .2143rem 0;
+}
+
+
+.main_sub_ttl{
+    font-size: 1.2857rem;
+    margin-bottom: 1.4286rem;
+}
+.main_sub_ttl.mo_sm{
+    font-size: 1rem;
+    margin-bottom: 2.1429rem;
+}
+
+
+/* main visual ----------- */
+.main_visual{
+    padding-top: 4.6429rem;
+    padding-bottom: 6.0714rem;
+    background: url(../img/main/main_bg_mo.jpg) no-repeat center / cover;
+    position: relative
+
+}
+
+.search_form_wrap input{
+    height: 2.8571rem;
+    border: .0714rem solid var(--bs-point);
+    border-radius: 1.4286rem;
+    font-size: 1rem;
+    padding-right: 2.8571rem;
+}
+.search_form_wrap .form_search {
+    width: 2.8571rem;
+    height: 2.8571rem;
+background-size: 1.25rem 1.2143rem;
+background-image: url(../img/btn/blue_search_mo.png);
+    }
+
+/* main_visual_bottom */
+.main_visual_bottom{
+    margin: 1.7857rem auto 0;
+}
+.main_visual_bottom .swiper-container{
+    padding-bottom: 2.1429rem;
+}
+.main_visual_bottom .swiper-container-horizontal>.swiper-pagination-bullets,
+.main_visual_bottom .swiper-pagination-custom,.main_visual_bottom .swiper-pagination-fraction{
+    bottom: 0;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: .7143rem;
+    height: .7143rem;
+    border: 1px solid #fff;
+    background: transparent;
+    opacity: 1;
+    margin: 0 5px;
+
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+.main_visual_bottom .card{
+    width: 100%;
+    padding: 2.0714rem 2.1429rem;
+    border-radius: 1.0714rem;
+}
+
+.main_visual_bottom .card+.card{
+    margin-left: 0;
+}
+
+.main_visual_bottom .card.green{
+    background-size: 7.5rem auto;
+}
+.main_visual_bottom .card.blue{
+    background-size: 6.7857rem auto;
+}
+
+.main_visual_bottom .card_cont .label{
+margin-bottom: .3571rem;
+}
+.main_visual_bottom .card_cont .amount{
+    font-size: 1.2143rem;
+}
+.main_visual_bottom .card_cont .amount strong{
+    font-size: 2.2857rem;
+}
+.main_visual_bottom .card_cont li+li{
+    margin-top: 1.0714rem;
+}
+.card_ttl{
+    font-size: 1.5rem;
+}
+.card_ttl_box p{
+    margin-top: .7143rem;
+}
+
+/* main_content */
+.main_content section{
+    padding-top: 3.5714rem;
+}
+figure + .text_box{
+    margin-top: 1.0714rem;
+}
+.text_box *+*{
+    margin-top: .7143rem;
+}
+.text_box .subject.lg{
+    font-size: 1.3571rem;
+}
+.text_box .subject{
+    font-size: 1.2143rem;
+    line-height: 1.3529;
+    max-height: 2.7058;
+}
+.text_box p{
+    line-height: 1.277;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.text_box p.text_sm{
+    font-size: .8571rem;
+}
+.text_box .number{
+    font-size: 1.9286rem;
+}
+.card_list > li,
+.card_list > div{
+    border-radius: .9286rem;
+}
+/*badge 공통*/
+.main_content .badge span{
+    border-radius: .9643rem;
+    height: 1.9286rem;
+    line-height: 1.9286rem;
+    padding: 0 .7143rem;
+}
+.main_content .badge.sm span{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding: 0 .5357rem;
+    border-radius: .75rem;
+    font-size: .8571rem;
+}
+/* 보험통계, 알쓸 보험 공통 */
+
+.main_top_content {
+    padding-bottom: 3.5714rem;
+}
+
+.main_top_content .card_list_wrap{
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: calc(100% + 1.0714rem);
+}
+
+.main_top_content .card_list>li,
+.main_top_content .card_list>div{
+    width: 15rem;
+    flex-shrink: 0;
+}
+
+.main_top_content .col-3,
+  .main_top_content .col-4 {
+    --mg-x: .5357rem;
+    flex-wrap: nowrap;
+  }
+ 
+  .supplementary_information_box {
+    margin-top: 2.8571rem;
+  }
+  
+  .supplementary_information_box .supplementary_card {
+    height: auto;
+    padding: 1.0714rem .7143rem;
+    border-radius: .3571rem;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  .supplementary_information_box .supplementary_card .ico {
+    width: 3.4286rem;
+    height: 3.4286rem;
+    margin-right: 0;
+    margin-bottom: .7143rem;
+  }
+  
+  /* 보헙통계 */
+  .main_content section.insurance_statistics_sect{
+    padding-top: 6.7857rem;
+  }
+  .insurance_statistics_sect .card_list li a{
+      padding: 1.0714rem;
+  }
+  
+  .insurance_statistics_sect .card_list .badge {
+    margin-bottom: .3571rem;
+  }
+  .insurance_statistics_sect .card_list figure {
+    border-radius: .5714rem;
+  }
+  
+  /* 인깆겅보 서비스  */
+  .insurance_statistics_sect .supplementary_card .ico.ico01 {
+    background-image: url(../img/main/graph_icon01.png);
+  }
+  
+  .insurance_statistics_sect .supplementary_card .ico.ico02 {
+    background-image: url(../img/main/graph_icon02.png);
+  }
+  
+  .insurance_statistics_sect .supplementary_card .ico.ico03 {
+    background-image: url(../img/main/graph_icon03.png);
+  }
+  
+  /* 알쓸보험 */
+  .useful_insurance_sect .card_list li a{
+    padding: .7143rem .7143rem 2.0714rem;
+  }
+  .useful_insurance_sect .card_list figure {
+    border-radius: 10px;
+  }
+  
+  /* 알아두면 쓸모 있는 자동차 보험 정보  */
+  .useful_insurance_sect .supplementary_card .ico.ico01 {
+    background-image: url(../img/main/information_icon01.png);
+  }
+  
+  .useful_insurance_sect .supplementary_card .ico.ico02 {
+    background-image: url(../img/main/information_icon02.png);
+  }
+  
+  .useful_insurance_sect .supplementary_card .ico.ico03 {
+    background-image: url(../img/main/information_icon03.png);
+  }
+  
+  /* my 보험---------------------------------------- */
+  .main_bot_content {
+    position: relative;
+    padding-bottom: 5rem;
+  }
+  .main_bot_content .main_ttl{
+    margin-bottom: 1.4286rem;
+  }
+  .main_bot_content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 17.1429rem;
+    background-color: var(--bs-bg-blue);
+  }
+  .my_banner_wrap {
+    margin-bottom: 2.1429rem;
+    border-radius: .3571rem;
+    background: url(../img/main/my_ins_banner_mo.jpg) no-repeat center / cover;
+  }
+  .my_banner_wrap a{
+      display: block;
+      padding: 1.9643rem 1.7857rem 2.8571rem;
+      padding-right: 6.0714rem;
+  }
+  
+  .my_banner_wrap .subject {
+    margin-bottom: .7143rem;
+  }
+  
+  .my_key_services .main_sub_ttl {
+    margin-bottom: 0;
+  }
+  
+  .my_key_services .card_list a {
+    display: block;
+    text-align: center;
+  }
+  .my_key_services .card_list img {
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .my_key_services .swiper-container {
+    padding: 1.4286rem 1px 2.8571rem;
+  }
+  .my_key_services .card_list .img {
+    border-radius: .3571rem .3571rem 0 0;
+  }
+  .my_key_services .card_list .img.bg-green {
+    background-color: #00ad53;
+  }
+  .my_key_services .card_list .img.bg-green2 {
+    background-color: #239c8c;
+  }
+  
+  .my_key_services .card_list .text_box {
+    margin-top: 1.4286rem;
+    padding: 0 .3571rem 1.4286rem;
+  }
+  .my_key_services .my_key_services_slider0 .card_list .img {
+    padding-top: .7143rem;
+  }
+  .my_key_services .my_key_services_slider0 .card_list .text_box {
+    margin-top: 0;
+  }
+  .my_key_services .my_key_services_slider1 .card_list .text_box {
+    padding-bottom: 2.8571rem;
+  }
+  
+  .my_key_services_slider1 .card_list .img {
+      height: 5.7143rem;
+    }
+    .my_key_services_slider1 .card_list .img img{
+    width: 120%;
+    }
+  .my_key_services .card_list .swiper-slide {
+    transition: all 0.5s;
+    border-radius: .3571rem;
+  }
+  .my_key_services .card_list .swiper-slide:hover {
+    box-shadow: 0 17px 27px rgba(0, 0, 0, 0.04);
+    transform: translateY(-20px);
+  }
+  .multiply img {
+    mix-blend-mode: multiply;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 1.7143rem;
+    height: 1.7143rem;
+    border: 1px solid #eee;
+    border-radius: .3571rem;
+    box-shadow: 0 .1786rem .2143rem rgba(0, 0, 0, 0.06);
+
+    --swiper-navigation-size: 1.7143rem;
+    background: #fff url(../img/main/card_next_mo.png) no-repeat center / .4286rem .8571rem;
+  }
+  .swiper-button-prev {
+      background-image: url(../img/main/card_prev_mo.png);
+
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;      
+    }
+  .my_key_services .swiper-button-next,
+  .my_key_services .swiper-button-prev {
+    top: calc(50% - .7143rem);
+  }
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: -0.8571rem;
+  }
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: -0.8571rem;
+  }
+  
+  /* 보림메인 */
+  .main_content section.insurance_news_sect{
+    padding-top: 1.4286rem;
+  }
+  .insurance_news_tab {
+    overflow-x: auto;
+    margin-bottom: 2.1429rem;
+  }
+  .insurance_news_tab button {
+    font-size: 1rem;
+    padding: 0 .7143rem;
+    line-height: 2.2143rem;
+    border-radius: 1.1071rem;
+    margin-right: .7143rem;
+    white-space: nowrap;
+  }
+  .insurance_news_cont .card_list .swiper-slide {
+    border-radius: .4286rem;
+    width: 20.3571rem;
+    
+    height: 20.3571rem;
+  }
+  .insurance_news_cont .card_list a {
+    padding: 2.1429rem 1.7857rem;
+    width: 100%;
+    height: 100%;
+  }
+  .insurance_news_cont .text_box .subject {
+    margin: .7143rem 0 1.4286rem;
+  }
+  .insurance_news_cont .text_box .desc {
+    line-height: 1.5;
+    max-height: 6em;
+  }
+  
+  
+  .ins_new_wrap {
+    padding-bottom: 4.2857rem;
+  }
+
+
+  .insurance_news_slider_btns {
+    top: auto;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .insurance_news_slider_btns .swiper-slide-btn > div {
+    width: 2.8571rem;
+    height: 2.8571rem;
+    background-image: url(../img/main/text_slider_prev_mo.png);
+    background-size: .6429rem 1.0357rem;
+    ;  
+
+}
+  
+  .insurance_news_slider_btns .swiper-slide-btn > .swiper-button-next {
+    background-image: url(../img/main/text_slider_next_mo.png);
+    margin-left: 10px;
+  }
+  .insurance_news_slider_btns .swiper-slide-btn > div::after {
+    display: none;
+  }
+  
+
+}

@@ -1,0 +1,148 @@
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+  #gnb  {
+    display: none;
+  }
+  #header .header_top {
+    padding:28px 0;
+    border-bottom: .0714rem solid #eeeeee;
+  }
+  .all_menu_wrap ,
+  .h_search {
+    top: 99px;
+  }
+
+  .all_menu_wrap .menu-01 > li {
+    display: block;
+    padding: 25px 0 50px;
+  }
+
+  .all_menu_wrap .gnb_hover {
+
+    width: 100%;
+  }
+  .all_menu_wrap .gnb_hover .inner {
+    width: 100%;
+  }
+  .all_menu_wrap .dep1 {
+    width: inherit;
+    margin-bottom:30px;
+  }
+
+
+  .all_menu_wrap .dep2 > li {
+    width: 50%;
+    margin-right: 0;
+  }
+  .all_menu_wrap .dep2 > li:nth-child(n+3),
+  .all_menu_wrap .dep2 > li:nth-child(n+6) {
+    margin-top: 30px;
+  }
+
+
+
+  .footer_info .inner_1120 {
+    display: block;
+  }
+  .footer_info .wa_logo {
+    margin-top: 1.25rem;
+  }
+
+  .sub_visual .inner::after {
+    display: none;
+  }
+  .sub_visual {
+    background-image: url(../img/sub/info_Visual_bg_m.png);
+  }
+
+
+  .tab_dep2 ul {
+    justify-content: flex-start;
+  }
+
+
+  .table_wrap.gray_table table tbody td br {
+    display: none;
+  }
+
+
+  .rep_type_list .img_box {
+    max-width: 140px;
+    margin-right: 15px;
+  }
+
+  .rep_type_list .type_desc {
+    padding-top: 0;
+  }
+
+
+
+
+  
+}
+@media screen and (max-width: 970px)  {
+  .all_menu_wrap {
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

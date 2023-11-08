@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'OneMobile';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileLight.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OneMobile';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileRegular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileRegular.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileRegular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileRegular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileRegular.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OneMobile';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/onestore/OneMobileBold.ttf') format("truetype");
+    font-display: swap;
+}

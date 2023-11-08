@@ -1,0 +1,98 @@
+<!-- tab_dep1 -->
+
+    <button type="button" class="now_btn only_mo"><span></span></button>
+
+    
+    <!-- 탭샘플 테스트  -->
+    <ul  data-page="test">
+        <li ><a href="/sub/tab_sample.html">탭샘플페이지</a></li>
+        <li><a href="/ins_info/interest_rate_standard.html">공시기준이율 산출기준</a></li>
+        <li><a href="/ins_info/interest_rate_down.html">공시기준이율 DOWNLOAD</a></li>
+    </ul>
+
+    <!-- 공시기준이융  -->
+    <ul  data-page="interest_rate">
+        <li ><a href="/ins_info/interest_rate.html">과거공시기준이율</a></li>
+        <li><a href="/ins_info/interest_rate_standard.html">공시기준이율 산출기준</a></li>
+        <li><a href="/ins_info/interest_rate_down.html">공시기준이율 DOWNLOAD</a></li>
+    </ul>
+
+    <!-- 자동차 보험정보  -->
+    <ul data-page="car">
+        <li><a href="/ins_info/car_price.html">차량기준가액</a></li>
+        <li><a href="/ins_info/car_model_grade.html">차량모델등급</a></li>
+        <li><a href="/ins_info/traffic_accident_status.html">광역시도별 교통사고 현황</a></li>
+        <li><a href="/ins_info/repair_standard.html">경미손상 수리기준</a></li>
+        <li><a href="/ins_info/car_cost_index.html">자동차보험금 원가지수</a></li>
+    </ul>
+
+    <!-- 국내외 보험 관련기관  -->
+    <ul data-page="agency">
+        <li><a href="/ins_info/insurance_agency.html">보험기관</a></li>
+        <li ><a href="/ins_info/related_agency.html">유관기관</a></li>
+        <li><a href="/ins_info/overseas_agency.html">해외보험기관</a></li>
+    </ul>
+
+     <!-- 검색결과  -->
+     <ul data-page="search">
+        <li><a href="/sub/search_main.html">전체(34건)</a></li>
+        <li><a href="/sub/search_more.html">보험통계 (6건)</a></li>
+        <li><a href="/sub/search_sample.html#!">알·쓸보험 (20건)</a></li>
+        <li><a href="/sub/search_no.html">MY보험(0건)</a></li>
+        <li><a href="/sub/search_sample.html#!">보험소식(8건)</a></li>
+    </ul>
+
+
+<!-- //tab_dep1  -->
+
+
+<script>
+    $(document).ready(function() {
+        const tabDep1 = $(".tab_dep1");
+        const depthValue = tabDep1.data('menu');
+        const pageValue = tabDep1.find('ul').data('page');
+    
+        // 모든 ul 요소를 선택
+        const ulElements = tabDep1.find('ul');
+
+        ulElements.each(function() {
+            const ulPage = $(this).data('page');
+
+            if (ulPage === depthValue) {
+                $(this).addClass('active');
+            }else {
+                $(this).remove();
+            }
+        });
+
+      
+
+        // 현재url , tab a 링크 비교후 on 붙이기
+        var currentPageURL = window.location.href;
+        // 로컬에서 작업 후 비교하고있어 호스트주소가 로컬로 되어있습니다
+        var hostURL = 'http://127.0.0.1:5500'; 
+
+        // 호스트 부분을 제외한 현재 페이지 URL
+        var relativeURL = currentPageURL.replace(hostURL, '');
+        console.log(relativeURL)
+  
+        $('.tab_dep1 ul li a').each(function() {
+            var linkURL = $(this).attr('href');
+            if (linkURL === relativeURL) {
+                $(this).parent('li').addClass('on');
+            }
+        });
+
+        var nowOn = $('.tab_dep1 .active li.on a').text()
+        $('.tab_dep1 .now_btn').text(nowOn)
+
+        $('.tab_dep1 .now_btn').on('click',function(){
+            $(this).toggleClass('on')
+            $(this).siblings('ul').slideToggle();
+            $('.tab_dep1 li').on('click',function(){
+            $(this).parent().slideUp()
+            })
+        })
+    });
+</script>
+
