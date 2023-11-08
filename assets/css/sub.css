@@ -654,10 +654,10 @@ i.bk_ico {
 .table_wrap.gray_table table tbody td  {
   padding: 10px 15px;
 }
-.car_price .table_wrap.gray_table table tbody td:last-child {
+.car_price_box .table_wrap.gray_table table tbody td:last-child {
   width: 18.2%;
 }
-.car_price .table_box  .value_box >div + div {
+.car_price_box .table_box  .value_box >div + div {
   margin-top: 30px;
 }
 .table_wrap.gray_table table tbody td   {
@@ -705,9 +705,9 @@ i.bk_ico {
   border: 1px solid ;
   border-radius: 4px;
 }
-.interest_down .row_table_style table td.date, 
-.interest_down .row_table_style table td.view 
-.interest_down .row_table_style table td.tal {
+.interest_down.row_table_style table td.date, 
+.interest_down.row_table_style table td.view 
+.interest_down.row_table_style table td.tal {
   color:#454545 ;
   font-weight:600 ;
 }
@@ -730,7 +730,7 @@ i.bk_ico {
   font-weight: 500;
 }
 .car_cost .file_down ,
-.interest_rate .file_down {
+.interest_rate_page .file_down {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -749,7 +749,7 @@ i.bk_ico {
 }
 .car_cost .file_down i,
 .interest_down .file_down i,
-.interest_rate .file_down i {
+.interest_rate_page .file_down i {
   display: block;
   width: 14px; height: 16px;
   background: no-repeat center;
@@ -894,21 +894,21 @@ i.bk_ico {
   flex-wrap: wrap;
   margin-bottom: 50px ;
 }
-.car_model_grade .form_wrap {
+.car_grade_sec .form_wrap {
   flex-wrap: wrap;
 }
-.car_model_grade .form-item ,
-.car_price .form-item {
+.car_grade_sec .form-item ,
+.car_price_box .form-item {
   width: calc(33.333% - 20px);
   margin-right:30px;
   margin-top:30px ;
 }
-.car_model_grade .form_wrap .form-item:nth-of-type(3n),
-.car_price .form-item:nth-of-type(3n) {
+.car_grade_sec .form_wrap .form-item:nth-of-type(3n),
+.car_price_box .form-item:nth-of-type(3n) {
   margin-right:0 ;
 }
 
-.ins_info .cta_btn {
+.cta_btn {
   max-width: 160px;
   margin: 0 auto 35px;
 }
@@ -922,29 +922,29 @@ i.bk_ico {
   font-weight: 700;
 }
 
-.car_price .tip_info {
+.car_price_box .tip_info {
   margin: 50px 0  20px;
 }
-.car_price .tip_info .sm_ttl {
+.car_price_box .tip_info .sm_ttl {
   margin-bottom: 0;
   line-height: 1;
 }
-.car_price .bg_box {
+.car_price_box .bg_box {
   background: #f8f9fb;
   padding:24px 30px ;
   border-radius: 14px;
 }
-.car_price .bg_box  dl {
+.car_price_box .bg_box  dl {
   display: flex;
   line-height:1.9 ;
   width:200px ;
 }
-.car_price .bg_box  dl dt {
+.car_price_box .bg_box  dl dt {
   font-weight: 700;
   color: #252525;
   margin-right: 4px;
 }
-.car_price .bg_box  dl dd {
+.car_price_box .bg_box  dl dd {
   font-weight: 700;
   color: #656565;
 }

@@ -56,7 +56,18 @@
     background-image: url(../img/sub/info_Visual_bg_m.png);
   }
 
-
+  .tab_dep1 ul {
+    flex-wrap: wrap;
+  }
+  .tab_dep1 ul li {
+    width: 33.333%;
+  }
+  .tab_dep1 ul li:nth-child(n+4) a {
+    border-top: none;
+  }
+  .tab_dep1 ul li:nth-child(4) a {
+    border-left: 1px solid #dbdbdb;
+  } 
   .tab_dep2 ul {
     justify-content: flex-start;
   }
@@ -77,7 +88,11 @@
   }
 
 
+  .car_grade_sec, 
+  .price_chk_sec {
 
+    padding: 20px;
+  }
 
   
 }

@@ -38,10 +38,10 @@
   <div id="wrap">
 
     <!-- container -->
-    <main id="container" class="ins_info interest_rate">
+    <main id="container">
 
       <!-- sub_visual -->
-      <section class="sub_visual">
+      <section class="sub_visual ins_info">
         <div class="inner">
           <h2 class="sub_visual_ttl">과거공시기준이율</h2>
           <em class="menu_ttl">메뉴설명</em>
@@ -754,9 +754,13 @@
           <!-- 과거공시이율 -->
           <div role="tabpanel" id="tabpanel6" class="tab_cont "  aria-labelledby="tab6">
 
-            <h3 class="square_ttl">과거공시기준이율</h3>
-            <a href="/assets/file/interest_rate_history.pdf" target="_blank" class="file_down btn-outline-dark">과거공시기준이율 다운로드 <i class="ico"></i> </a>
-            <p class="ps"><i>※</i> 웹페이지에 게시된 공시기준이율은 참고 목적으로 게시하고 있으며, 실제 계약에 적용된 이율은 보험회사에 확인하시기 바랍니다.  </p>
+            <!-- interest_rate_page 으로 감싸며 수정했습니다 -->
+            <div class="interest_rate_page">
+              <h3 class="square_ttl">과거공시기준이율</h3>
+              <a href="/assets/file/interest_rate_history.pdf" target="_blank" class="file_down btn-outline-dark">과거공시기준이율 다운로드 <i class="ico"></i> </a>
+              <p class="ps"><i>※</i> 웹페이지에 게시된 공시기준이율은 참고 목적으로 게시하고 있으며, 실제 계약에 적용된 이율은 보험회사에 확인하시기 바랍니다.  </p>
+            </div>
+            
 
           </div>
           

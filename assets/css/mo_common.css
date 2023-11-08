@@ -52,6 +52,7 @@
   .all_menu_wrap,
   .h_search {
     top: 3.6071rem;
+    border-top: .0714rem solid #eeeeee;
   }
   .gnbOpen #header .all_menu_wrap .ham_close {
     width: 1.7857rem;
@@ -88,7 +89,7 @@
     transform: translate(0);
     top: 0;
     left: 9.2857rem;
-    border-left: 2px solid #eeeeee;
+    border-left: .0714rem solid #eeeeee;
     height: 100%;
     background: none;
     width: calc(100% - 9.2857rem);
@@ -119,7 +120,7 @@
     width: calc(100% - 2.5rem);
     height: auto;
     margin: 0 1.0714rem 0 1.4286rem;
-    border-bottom: 2px solid #eee;
+    border-bottom: .0714rem solid #eee;
   }
   .all_menu_wrap .dep3 {
     display: none;

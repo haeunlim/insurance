@@ -39,12 +39,15 @@
 <body>
 
   <div id="wrap">
+    <!-- 
+        해당페이지의 경우 tabpanel안에 div.car_price_box로 다시 감싸 안의 css를 제어하고있습니다
+                                                                                                  -->
 
     <!-- container -->
-    <main id="container" class="ins_info car_price">
+    <main id="container">
 
       <!-- sub_visual -->
-      <section class="sub_visual">
+      <section class="sub_visual ins_info">
         <div class="inner">
           <h2 class="sub_visual_ttl">차량기준가액</h2>
           <em class="menu_ttl">메뉴설명</em>
@@ -95,645 +98,650 @@
           
           <!-- 국산  -->
           <div role="tabpanel" id="tabpanel1" class="tab_cont active" aria-labelledby="tab1">
-            <h3 class="square_ttl">차량기준가액</h3>
-            <p class="text">신차인 경우 옵션가격을 제외한 제조사 판매가(부가세포함) 입니다.</p>
-
-            <section class="price_chk_sec">
-              <div class="top_info">
-                <em class="sm_ttl text-b45">현재 귀하께서 접속하신 공인IP 주소는 <span class="text-point">58.232.207.110</span>입니다.</em>
-                <p class="text"> 
-                  차량기준가액표는 자동차보험 자기차량손해보험 계약을 체결하는 경우 적정한 보험가액을 정하고 사고 발생시 손해액을 결정하는 기준이 되는 자료로서 
-                  자동차보험 계약체결 목적 이외의 사용을 엄격히 금합니다.
-                </p>
+          
+            <div class="car_price_box">
+              <h3 class="square_ttl">차량기준가액</h3>
+              <p class="text">신차인 경우 옵션가격을 제외한 제조사 판매가(부가세포함) 입니다.</p>
+              <section class="price_chk_sec">
+                <div class="top_info">
+                  <em class="sm_ttl text-b45">현재 귀하께서 접속하신 공인IP 주소는 <span class="text-point">58.232.207.110</span>입니다.</em>
                   <p class="text">
-                    차량기준가액표는 저작권법에 따라 보호되는 편집저작물로써 차량기준가액표를 사용하기 위해서는 반드시 보험개발원의 허락을 받아야 하고, 허락된 이용 방법 및 
-                    목적의 범위 내에서 이용하여야 합니다. 이를 위반시 저작권 침해로 민사상 손해배상 책임이 있으며 형사 처벌을 받을 수 있습니다.
+                    차량기준가액표는 자동차보험 자기차량손해보험 계약을 체결하는 경우 적정한 보험가액을 정하고 사고 발생시 손해액을 결정하는 기준이 되는 자료로서
+                    자동차보험 계약체결 목적 이외의 사용을 엄격히 금합니다.
                   </p>
-              </div>
-              <div class="use_price_chk">
-                <div class="use_info_box flex-b-e">
-                  <div class="tip flex--c">
-                    <em class="tip_tag">TIP</em>
-                    <button type="button" class="btn-default modal_open" 
-                      data-modal-id="car_result_chk">이용방법 안내 Click!</button>
-                      
+                    <p class="text">
+                      차량기준가액표는 저작권법에 따라 보호되는 편집저작물로써 차량기준가액표를 사용하기 위해서는 반드시 보험개발원의 허락을 받아야 하고, 허락된 이용 방법 및
+                      목적의 범위 내에서 이용하여야 합니다. 이를 위반시 저작권 침해로 민사상 손해배상 책임이 있으며 형사 처벌을 받을 수 있습니다.
+                    </p>
+                </div>
+                <div class="use_price_chk">
+                  <div class="use_info_box flex-b-e">
+                    <div class="tip flex--c">
+                      <em class="tip_tag">TIP</em>
+                      <button type="button" class="btn-default modal_open"
+                        data-modal-id="car_result_chk">이용방법 안내 Click!</button>
+              
+                    </div>
+                    <div class="view_count_box flex--c">
+                      <em class="sm_ttl">일일 조회수 <span class="text-point">0</span>/5</em>
+                      <em class="sm_ttl">월간 조회수 <span class="text-point">10</span>/10</em>
+                      <em class="sm_ttl">연간 조회수 <span class="text-point">20</span>/20</em>
+                    </div>
                   </div>
-
-                  <div class="view_count_box flex--c">
-                    <em class="sm_ttl">일일 조회수 <span class="text-point">0</span>/5</em>
-                    <em class="sm_ttl">월간 조회수 <span class="text-point">10</span>/10</em>
-                    <em class="sm_ttl">연간 조회수 <span class="text-point">20</span>/20</em>
+                  <div class="my_car_box">
+                    <form action="">
+                      <div class="form-item select-col">
+                        <label for="base_year_month">기준년월</label>
+                        <select name="base_year_month" id="base_year_month" class="bs-select">
+                          <option value="202310">2023/10</option>
+                          <option value="202307">2023/07</option>
+                        </select>
+                      </div>
+                      <div class="flex--c form_wrap">
+                        <div class="form-item select-col">
+                          <label for="car_makr">제작사</label>
+                          <select name="car_makr" id="car_makr" class="bs-select">
+                            <!-- 사용하는 글꼴이 --- 붙여서 쓰면 화면에서 한줄처럼 보입니다 - - - 이렇게 띄어쓰기 넣어서 사용해주세요 -->
+                            <option value="">- - -</option>
+                            <option value="1">제작사1</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="car_type">차종</label>
+                          <select name="car_type" id="car_type" class="bs-select">
+                            <option value="">- - -</option>
+                            <option value="1">차종1</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="car_code_grst">차명대분류</label>
+                          <select name="car_code_grst" id="car_code_grst" class="bs-select">
+                            <option value="">- - -</option>
+                            <option value="1">대분류1</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="car_year">차량 연식</label>
+                          <select name="car_year" id="car_year" class="bs-select">
+                            <option value="">- - -</option>
+                            <option value="2023">2023</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="car_code_smst">차명소분류</label>
+                          <select name="car_code_smst" id="car_code_smst" class="bs-select">
+                            <option value="">- - -</option>
+                            <option value="1">소분류1</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="car_code_grst">세부분류</label>
+                          <select name="car_code_grst" id="car_code_grst" class="bs-select">
+                            <option value="">- - -</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="cta_btn">
+                        <button type="button" class="btn-point modal_open" data-modal-id="car_use_info">조회</button>
+                      </div>
+                    </form>
+                    <div class="text_box">
+                      <p class="text flex"><i>※</i> 차량기준가액 산출기간 :  20년 (예 : 2004년 ~2023년)</p>
+                      <p class="text flex"><i>※</i> 차량연식은 자동차 차량등록증 상의 최초 등록년도입니다.</p>
+                      <p class="text flex"><i>※</i> 현재 기준의 차량가액을 조회하는 경우 “기준년월” 은 변경할 필요가 없습니다.</p>
+                    </div>
+                    <div class="tip tip_info flex--c">
+                      <em class="tip_tag">TIP</em>
+                      <em class="sm_ttl text-b45">기준년월 도움말</em>
+                    </div>
+                    <div class="bg_box">
+                      <div class="flex">
+                        <dl>
+                          <dt>1월</dt>
+                          <dd> :&nbsp;1, 2, 3월 적용분</dd>
+                        </dl>
+                        <dl>
+                          <dt>4월</dt>
+                          <dd> :&nbsp;4, 5, 6월 적용분</dd>
+                        </dl>
+                      </div>
+                      <div class="flex">
+                        <dl>
+                          <dt>7월</dt>
+                          <dd> :&nbsp;7, 8, 9월 적용분</dd>
+                        </dl>
+                        <dl>
+                          <dt>10월</dt>
+                          <dd> :&nbsp;10, 11, 12월 적용분</dd>
+                        </dl>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div class="my_car_box">
-                  <form action="">
-                    <div class="form-item select-col">
-                      <label for="base_year_month">기준년월</label>
-                      <select name="base_year_month" id="base_year_month" class="bs-select">
-                        <option value="202310">2023/10</option>
-                        <option value="202307">2023/07</option>
-                      </select>
-                    </div>
-                    <div class="flex--c form_wrap">
-                      <div class="form-item select-col">
-                        <label for="car_makr">제작사</label>
-                        <select name="car_makr" id="car_makr" class="bs-select">
-                          <!-- 사용하는 글꼴이 --- 붙여서 쓰면 화면에서 한줄처럼 보입니다 - - - 이렇게 띄어쓰기 넣어서 사용해주세요 -->
-                          <option value="">- - -</option>
-                          <option value="1">제작사1</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="car_type">차종</label>
-                        <select name="car_type" id="car_type" class="bs-select">
-                          <option value="">- - -</option>
-                          <option value="1">차종1</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="car_code_grst">차명대분류</label>
-                        <select name="car_code_grst" id="car_code_grst" class="bs-select">
-                          <option value="">- - -</option>
-                          <option value="1">대분류1</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="car_year">차량 연식</label>
-                        <select name="car_year" id="car_year" class="bs-select">
-                          <option value="">- - -</option>
-                          <option value="2023">2023</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="car_code_smst">차명소분류</label>
-                        <select name="car_code_smst" id="car_code_smst" class="bs-select">
-                          <option value="">- - -</option>
-                          <option value="1">소분류1</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="car_code_grst">세부분류</label>
-                        <select name="car_code_grst" id="car_code_grst" class="bs-select">
-                          <option value="">- - -</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="cta_btn">
-                      <button type="button" class="btn-point modal_open" data-modal-id="car_use_info">조회</button>
-                    </div>
-                  </form>
-                  <div class="text_box">
-                    <p class="text flex"><i>※</i> 차량기준가액 산출기간 :  20년 (예 : 2004년 ~2023년)</p>
-                    <p class="text flex"><i>※</i> 차량연식은 자동차 차량등록증 상의 최초 등록년도입니다.</p>
-                    <p class="text flex"><i>※</i> 현재 기준의 차량가액을 조회하는 경우 “기준년월” 은 변경할 필요가 없습니다.</p>
-                  </div>
-
-                  <div class="tip tip_info flex--c">
-                    <em class="tip_tag">TIP</em>
-                    <em class="sm_ttl text-b45">기준년월 도움말</em>
-                  </div>
-
-                  <div class="bg_box">
-                    <div class="flex">
-                      <dl>
-                        <dt>1월</dt>
-                        <dd> :&nbsp;1, 2, 3월 적용분</dd>
-                      </dl>
-                      <dl>
-                        <dt>4월</dt>
-                        <dd> :&nbsp;4, 5, 6월 적용분</dd>
-                      </dl>
-                    </div>
-                    <div class="flex">
-                      <dl>
-                        <dt>7월</dt>
-                        <dd> :&nbsp;7, 8, 9월 적용분</dd>
-                      </dl>
-                      <dl>
-                        <dt>10월</dt>
-                        <dd> :&nbsp;10, 11, 12월 적용분</dd>
-                      </dl>
-                    </div>
-                  </div>
-                </div>
-              </div>
-           
-            </section>
+              </section>
+            </div>
           </div>
 
           <!-- 외산 -->
           <div role="tabpanel" id="tabpanel2" class="tab_cont" aria-labelledby="tab2">
-            <h3 class="square_ttl">차량기준가액</h3>
-            <p class="text">신차인 경우 옵션가격을 제외한 제조사 판매가(부가세포함) 입니다.</p>
-
-            <section class="price_chk_sec">
-              <div class="top_info">
-                <em class="sm_ttl text-b45">현재 귀하께서 접속하신 공인IP 주소는 <span class="text-point">58.232.207.110</span>입니다.</em>
-                <p class="text"> 
-                  차량기준가액표는 자동차보험 자기차량손해보험 계약을 체결하는 경우 적정한 보험가액을 정하고 사고 발생시 손해액을 결정하는 기준이 되는 자료로서 
-                  자동차보험 계약체결 목적 이외의 사용을 엄격히 금합니다.
-                </p>
-                  <p class="text">
-                    차량기준가액표는 저작권법에 따라 보호되는 편집저작물로써 차량기준가액표를 사용하기 위해서는 반드시 보험개발원의 허락을 받아야 하고, 허락된 이용 방법 및 
-                    목적의 범위 내에서 이용하여야 합니다. 이를 위반시 저작권 침해로 민사상 손해배상 책임이 있으며 형사 처벌을 받을 수 있습니다.
+           <div class="car_price_box">
+              <h3 class="square_ttl">차량기준가액</h3>
+              <p class="text">신차인 경우 옵션가격을 제외한 제조사 판매가(부가세포함) 입니다.</p>
+  
+              <section class="price_chk_sec">
+                <div class="top_info">
+                  <em class="sm_ttl text-b45">현재 귀하께서 접속하신 공인IP 주소는 <span class="text-point">58.232.207.110</span>입니다.</em>
+                  <p class="text"> 
+                    차량기준가액표는 자동차보험 자기차량손해보험 계약을 체결하는 경우 적정한 보험가액을 정하고 사고 발생시 손해액을 결정하는 기준이 되는 자료로서 
+                    자동차보험 계약체결 목적 이외의 사용을 엄격히 금합니다.
                   </p>
-              </div>
-              <div class="use_price_chk">
-                <div class="use_info_box flex-b-e">
-                  <div class="tip flex--c">
-                    <em class="tip_tag">TIP</em>
-                    <button type="button" class="btn-default modal_open" 
-                      data-modal-id="car_result_chk">이용방법 안내 Click!</button>
-                      
+                    <p class="text">
+                      차량기준가액표는 저작권법에 따라 보호되는 편집저작물로써 차량기준가액표를 사용하기 위해서는 반드시 보험개발원의 허락을 받아야 하고, 허락된 이용 방법 및 
+                      목적의 범위 내에서 이용하여야 합니다. 이를 위반시 저작권 침해로 민사상 손해배상 책임이 있으며 형사 처벌을 받을 수 있습니다.
+                    </p>
+                </div>
+                <div class="use_price_chk">
+                  <div class="use_info_box flex-b-e">
+                    <div class="tip flex--c">
+                      <em class="tip_tag">TIP</em>
+                      <button type="button" class="btn-default modal_open" 
+                        data-modal-id="car_result_chk">이용방법 안내 Click!</button>
+                        
+                    </div>
+  
+                    <div class="view_count_box flex--c">
+                      <em class="sm_ttl">일일 조회수 <span class="text-point">0</span>/5</em>
+                      <em class="sm_ttl">월간 조회수 <span class="text-point">0</span>/5</em>
+                      <em class="sm_ttl">연간 조회수 <span class="text-point">0</span>/5</em>
+                    </div>
                   </div>
-
-                  <div class="view_count_box flex--c">
-                    <em class="sm_ttl">일일 조회수 <span class="text-point">0</span>/5</em>
-                    <em class="sm_ttl">월간 조회수 <span class="text-point">0</span>/5</em>
-                    <em class="sm_ttl">연간 조회수 <span class="text-point">0</span>/5</em>
+  
+                  <div class="my_car_box">
+                    <form action="">
+                      <div class="form-item select-col">
+                        <label for="f_base_year_month">기준년월</label>
+                        <select name="f_base_year_month" id="f_base_year_month" class="bs-select">
+                          <option value="202310">2023/10</option>
+                          <option value="202307">2023/07</option>
+                        </select>
+                      </div>
+                      <div class="flex--c form_wrap">
+                        <div class="form-item select-col">
+                          <label for="f_car_form">국가구분</label>
+                          <select name="f_car_form" id="f_car_form" class="bs-select">
+                            <!-- 사용하는 글꼴이 --- 붙여서 쓰면 화면에서 한줄처럼 보입니다 - - - 이렇게 띄어쓰기 넣어서 사용해주세요 -->
+                            <option value="">- - -</option>
+                            <option value="1">미국</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="f_car_makr">제작사</label>
+                          <select name="f_car_makr" id="f_car_makr" class="bs-select">
+                            <option value="">- - -</option>
+                            <option value="1">제작사1</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="f_car_code_grst">차명대분류</label>
+                          <select name="f_car_code_grst" id="f_car_code_grst" class="bs-select">
+                            <option value="">- - -</option>
+                            <option value="1">대분류1</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="f_car_year">차량 연식</label>
+                          <select name="f_car_year" id="f_car_year" class="bs-select">
+                            <option value="">- - -</option>
+                            <option value="2023">2023</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="f_car_code_smst">차명소분류</label>
+                          <select name="f_car_code_smst" id="f_car_code_smst" class="bs-select">
+                            <option value="">- - -</option>
+                            <option value="1">소분류1</option>
+                          </select>
+                        </div>
+                        <div class="form-item select-col">
+                          <label for="f_car_code_grst">세부분류</label>
+                          <select name="f_car_code_grst" id="f_car_code_grst" class="bs-select">
+                            <option value="">- - -</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="cta_btn">
+                        <button type="button" class="btn-point modal_open" data-modal-id="car_use_info">조회</button>
+                      </div>
+                    </form>
+                    <div class="text_box">
+                      <p class="text flex"><i>※</i> 차량기준가액 산출기간 :  20년 (예 : 2004년 ~2023년)</p>
+                      <p class="text flex"><i>※</i> 차량연식은 자동차 차량등록증 상의 최초 등록년도입니다.</p>
+                      <p class="text flex"><i>※</i> 현재 기준의 차량가액을 조회하는 경우 “기준년월” 은 변경할 필요가 없습니다.</p>
+                    </div>
+  
+                    <div class="tip tip_info flex--c">
+                      <em class="tip_tag">TIP</em>
+                      <em class="sm_ttl text-b45">기준년월 도움말</em>
+                    </div>
+  
+                    <div class="bg_box">
+                      <div class="flex">
+                        <dl>
+                          <dt>1월</dt>
+                          <dd> :&nbsp;1, 2, 3월 적용분</dd>
+                        </dl>
+                        <dl>
+                          <dt>4월</dt>
+                          <dd> :&nbsp;4, 5, 6월 적용분</dd>
+                        </dl>
+                      </div>
+                      <div class="flex">
+                        <dl>
+                          <dt>7월</dt>
+                          <dd> :&nbsp;7, 8, 9월 적용분</dd>
+                        </dl>
+                        <dl>
+                          <dt>10월</dt>
+                          <dd> :&nbsp;10, 11, 12월 적용분</dd>
+                        </dl>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div class="my_car_box">
-                  <form action="">
-                    <div class="form-item select-col">
-                      <label for="f_base_year_month">기준년월</label>
-                      <select name="f_base_year_month" id="f_base_year_month" class="bs-select">
-                        <option value="202310">2023/10</option>
-                        <option value="202307">2023/07</option>
-                      </select>
-                    </div>
-                    <div class="flex--c form_wrap">
-                      <div class="form-item select-col">
-                        <label for="f_car_form">국가구분</label>
-                        <select name="f_car_form" id="f_car_form" class="bs-select">
-                          <!-- 사용하는 글꼴이 --- 붙여서 쓰면 화면에서 한줄처럼 보입니다 - - - 이렇게 띄어쓰기 넣어서 사용해주세요 -->
-                          <option value="">- - -</option>
-                          <option value="1">미국</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="f_car_makr">제작사</label>
-                        <select name="f_car_makr" id="f_car_makr" class="bs-select">
-                          <option value="">- - -</option>
-                          <option value="1">제작사1</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="f_car_code_grst">차명대분류</label>
-                        <select name="f_car_code_grst" id="f_car_code_grst" class="bs-select">
-                          <option value="">- - -</option>
-                          <option value="1">대분류1</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="f_car_year">차량 연식</label>
-                        <select name="f_car_year" id="f_car_year" class="bs-select">
-                          <option value="">- - -</option>
-                          <option value="2023">2023</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="f_car_code_smst">차명소분류</label>
-                        <select name="f_car_code_smst" id="f_car_code_smst" class="bs-select">
-                          <option value="">- - -</option>
-                          <option value="1">소분류1</option>
-                        </select>
-                      </div>
-                      <div class="form-item select-col">
-                        <label for="f_car_code_grst">세부분류</label>
-                        <select name="f_car_code_grst" id="f_car_code_grst" class="bs-select">
-                          <option value="">- - -</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="cta_btn">
-                      <button type="button" class="btn-point modal_open" data-modal-id="car_use_info">조회</button>
-                    </div>
-                  </form>
-                  <div class="text_box">
-                    <p class="text flex"><i>※</i> 차량기준가액 산출기간 :  20년 (예 : 2004년 ~2023년)</p>
-                    <p class="text flex"><i>※</i> 차량연식은 자동차 차량등록증 상의 최초 등록년도입니다.</p>
-                    <p class="text flex"><i>※</i> 현재 기준의 차량가액을 조회하는 경우 “기준년월” 은 변경할 필요가 없습니다.</p>
-                  </div>
-
-                  <div class="tip tip_info flex--c">
-                    <em class="tip_tag">TIP</em>
-                    <em class="sm_ttl text-b45">기준년월 도움말</em>
-                  </div>
-
-                  <div class="bg_box">
-                    <div class="flex">
-                      <dl>
-                        <dt>1월</dt>
-                        <dd> :&nbsp;1, 2, 3월 적용분</dd>
-                      </dl>
-                      <dl>
-                        <dt>4월</dt>
-                        <dd> :&nbsp;4, 5, 6월 적용분</dd>
-                      </dl>
-                    </div>
-                    <div class="flex">
-                      <dl>
-                        <dt>7월</dt>
-                        <dd> :&nbsp;7, 8, 9월 적용분</dd>
-                      </dl>
-                      <dl>
-                        <dt>10월</dt>
-                        <dd> :&nbsp;10, 11, 12월 적용분</dd>
-                      </dl>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+              </section>
+           </div>
           </div>
 
           <!-- 적용기준 -->
           <div role="tabpanel" id="tabpanel3" class="tab_cont"   aria-labelledby="tab3">
-            <ul class="text_list">
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">자동차의 보험가액과 보험가입금액은 피보험자동차의 용도, 차명,형식, 모양 및 년식 등을 확인하여 다음과 같이 정한다.</strong>
-                  <div>
-                    <em class="sm_ttl">가. 수신고의 기준 및 적용</em>
-                    <p class="text">해당 차량의 기준가액을 적용한다.</p>
-                  </div>
-                  <div>
-                    <em class="sm_ttl">나.기준가액표에 없는 자동차</em>
-                    <p class="text">차량의 제조회사, 기통 수, 용적, 연도 및 모양 등으로 보아 기준가액표상의 유사한 차량의 가액 또는 동종 차량의 시중거래가격을 참고로 하여 정하거나, 국내 판매가격(부가가치세 포함)을 
-                      기준가액으로 하여 “I. 5. 내용연수표”와 “Ⅲ. 부록 3. 표준감가상각잔존율표”에 의하여 가액을 결정한다. 다만, 외국산 자동차는 추가적으로 다음과 같은 기준을 적용한다.</p>
-                    <div class="ico_box">
-                      <p class="blue_ico_txt"><i></i>외국산 자동차</p>
-                      <p class="text">자동차 수입판매회사가 수입하여 판매한 외국산 자동차의 경우 자동차 구입자가 지불한 국내판매가격 (부가가치세 포함)을 기준가액으로 정하고, C.I.F. 가격의 확인유무에 따라 “4. 
-                        외국산 자동차의 기준가액 책정”에 기재되어 있는 방식으로 기준가액을 산정한다. 또한, 외국산 신차 국내 판매가격의 확인이 곤란 할 때는 “Ⅲ. 부록 1. 외산차 출시가격표
-                        (2007년&nbsp;이전)”를 참고로 하여 기준가액을 정할 수 있다.</p>
+           <div class="car_price_box">
+              <ul class="text_list">
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">자동차의 보험가액과 보험가입금액은 피보험자동차의 용도, 차명,형식, 모양 및 년식 등을 확인하여 다음과 같이 정한다.</strong>
+                    <div>
+                      <em class="sm_ttl">가. 수신고의 기준 및 적용</em>
+                      <p class="text">해당 차량의 기준가액을 적용한다.</p>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl mb-0">자동차 시가가 기준가액표상의 가액과 현저한 차이가 있을 때에는 자동차매매계약서 또는 전문업소의 자동차시가 감정서등 합리적이고 
-                  객관적인 증빙자료를 참고로 한 시가를 기준가액으로 한다.</strong>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl mb-0">관용자동차의 기준가액은 자가용자동차의 가액을 적용하며, 특수차는 용도 구분없이 적용한다.</strong>
-                </div>
-              </li>
-              <li class="table_box">
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">내용년수표</strong>
-                  <div>
-                    <em class="sm_ttl">가. 차량</em>
-                    <div class="table_wrap gray_table car_table">
-                      <div class="mo_scroll">
-                        <table>
-                          <caption class="hidden">차량안내표</caption>
-                          <thead>
-                            <tr>
-                              <th scope="col">구분 </th>
-                              <th colspan="3" scope="col">차종</th>
-                              <th scope="col">내용연수</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td rowspan="4" scope="row">자가용</td>
-                              <td colspan="3">승용차</td>
-                              <td>15년</td>
-                            </tr>
-                            <tr>
-                              <td colspan="3">버스</td>
-                              <td>15년</td>
-                            </tr>
-                            <tr>
-                              <td colspan="3">화물차</td>
-                              <td>15년</td>
-                            </tr>
-                            <tr>
-                              <td colspan="3">이륜자동차</td>
-                              <td>6년</td>
-                            </tr>
-                            <tr>
-                              <td rowspan="18" scope="row">영업용</td>
-                              <td rowspan="13">승용자동차</td>
-                              <td rowspan="9">여객자동차 <br>운송사업용</td>
-                              <td>개인택시(경형 · 소형)</td>
-                              <td>5년</td>
-                            </tr>
-                            <tr>
-                              <td>개인택시(경형 · 소형)</td>
-                              <td>5년</td>
-                            </tr>
-                            <tr>
-                              <td>개인택시(배기량 2400cc 미만)</td>
-                              <td>7년</td>
-                            </tr>
-                            <tr>
-                              <td>개인택시(배기량 2400c 이상)</td>
-                              <td>9년</td>
-                            </tr>
-                            <tr>
-                              <td>개인택시(환경친화적자동차)</td>
-                              <td>9년</td>
-                            </tr>
-                            <tr>
-                              <td>일반택시(경형 · 소형)</td>
-                              <td>3년 6월</td>
-                            </tr>
-                            <tr>
-                              <td>일반택시(배기량 2400c 미만)</td>
-                              <td>4년</td>
-                            </tr>
-                            <tr>
-                              <td>일반택시(배기량 2400c 이상)</td>
-                              <td>6년</td>
-                            </tr>
-                            <tr>
-                              <td>일반택시(환경친화적자동차)</td>
-                              <td>6년</td>
-                            </tr>
-                            <tr>
-                              <td rowspan="2">자동차대여사업용</td>
-                              <td>경형 · 소형· 대형</td>
-                              <td>5년</td>
-                            </tr>
-                            <tr>
-                              <td>대형</td>
-                              <td>8년</td>
-                            </tr>
-                            <tr>
-                              <td rowspan="2">특수여객자동차운송사업용</td>
-                              <td>경형 · 소형· 대형</td>
-                              <td>6년</td>
-                            </tr>
-                            <tr>
-                              <td>대형</td>
-                              <td>10년</td>
-                            </tr>
-                            <tr>
-                              <td rowspan="2">승합자동차</td>
-                              <td colspan="2">전세버스운송사업용 또는 특수여객자동차운송사업용</td>
-                              <td>11년</td>
-                            </tr>
-                            <tr>
-                              <td colspan="2">기타사업용</td>
-                              <td>9년</td>
-                            </tr>
-                            <tr>
-                              <td rowspan="2">화물자동차</td>
-                              <td colspan="2">일반화물자동차운송사업용</td>
-                              <td>13년</td>
-                            </tr>
-                            <tr>
-                              <td colspan="2">개인화물자동차운송사업용</td>
-                              <td>13년</td>
-                            </tr>
-                            <tr>
-                              <td colspan="3">이륜자동차</td>
-                              <td>4년</td>
-                            </tr>
-                         </tbody>
-                        </table>
+                    <div>
+                      <em class="sm_ttl">나.기준가액표에 없는 자동차</em>
+                      <p class="text">차량의 제조회사, 기통 수, 용적, 연도 및 모양 등으로 보아 기준가액표상의 유사한 차량의 가액 또는 동종 차량의 시중거래가격을 참고로 하여 정하거나, 국내 판매가격(부가가치세 포함)을 
+                        기준가액으로 하여 “I. 5. 내용연수표”와 “Ⅲ. 부록 3. 표준감가상각잔존율표”에 의하여 가액을 결정한다. 다만, 외국산 자동차는 추가적으로 다음과 같은 기준을 적용한다.</p>
+                      <div class="ico_box">
+                        <p class="blue_ico_txt"><i></i>외국산 자동차</p>
+                        <p class="text">자동차 수입판매회사가 수입하여 판매한 외국산 자동차의 경우 자동차 구입자가 지불한 국내판매가격 (부가가치세 포함)을 기준가액으로 정하고, C.I.F. 가격의 확인유무에 따라 “4. 
+                          외국산 자동차의 기준가액 책정”에 기재되어 있는 방식으로 기준가액을 산정한다. 또한, 외국산 신차 국내 판매가격의 확인이 곤란 할 때는 “Ⅲ. 부록 1. 외산차 출시가격표
+                          (2007년&nbsp;이전)”를 참고로 하여 기준가액을 정할 수 있다.</p>
                       </div>
                     </div>
                   </div>
-                  <div>
-                    <em class="sm_ttl">나. 농업기계</em>
-                    <div class="table_wrap gray_table car_table">
-                      <div class="mo_scroll">
-                        <table>
-                          <caption class="hidden">농업기계안내표</caption>
-                          <thead>
-                            <tr>
-                              <th scope="col">차종</th>
-                              <th scope="col">내용연수</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td >콤바인(자탈기), 이앙기, 관리기, 이식기, 예취기</td>
-                              <td>5년</td>
-                            </tr>
-                             <tr>
-                              <td >동력경운기, 스피드 스프레이어</td>
-                              <td>6년</td>
-                            </tr>
-                             <tr>
-                              <td >농업트랙터, 농용엔진, 곡물건조기</td>
-                              <td>8년</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl mb-0">자동차 시가가 기준가액표상의 가액과 현저한 차이가 있을 때에는 자동차매매계약서 또는 전문업소의 자동차시가 감정서등 합리적이고 
+                    객관적인 증빙자료를 참고로 한 시가를 기준가액으로 한다.</strong>
+                  </div>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl mb-0">관용자동차의 기준가액은 자가용자동차의 가액을 적용하며, 특수차는 용도 구분없이 적용한다.</strong>
+                  </div>
+                </li>
+                <li class="table_box">
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">내용년수표</strong>
+                    <div>
+                      <em class="sm_ttl">가. 차량</em>
+                      <div class="table_wrap gray_table car_table">
+                        <div class="mo_scroll">
+                          <table>
+                            <caption class="hidden">차량안내표</caption>
+                            <thead>
+                              <tr>
+                                <th scope="col">구분 </th>
+                                <th colspan="3" scope="col">차종</th>
+                                <th scope="col">내용연수</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td rowspan="4" scope="row">자가용</td>
+                                <td colspan="3">승용차</td>
+                                <td>15년</td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">버스</td>
+                                <td>15년</td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">화물차</td>
+                                <td>15년</td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">이륜자동차</td>
+                                <td>6년</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="18" scope="row">영업용</td>
+                                <td rowspan="13">승용자동차</td>
+                                <td rowspan="9">여객자동차 <br>운송사업용</td>
+                                <td>개인택시(경형 · 소형)</td>
+                                <td>5년</td>
+                              </tr>
+                              <tr>
+                                <td>개인택시(경형 · 소형)</td>
+                                <td>5년</td>
+                              </tr>
+                              <tr>
+                                <td>개인택시(배기량 2400cc 미만)</td>
+                                <td>7년</td>
+                              </tr>
+                              <tr>
+                                <td>개인택시(배기량 2400c 이상)</td>
+                                <td>9년</td>
+                              </tr>
+                              <tr>
+                                <td>개인택시(환경친화적자동차)</td>
+                                <td>9년</td>
+                              </tr>
+                              <tr>
+                                <td>일반택시(경형 · 소형)</td>
+                                <td>3년 6월</td>
+                              </tr>
+                              <tr>
+                                <td>일반택시(배기량 2400c 미만)</td>
+                                <td>4년</td>
+                              </tr>
+                              <tr>
+                                <td>일반택시(배기량 2400c 이상)</td>
+                                <td>6년</td>
+                              </tr>
+                              <tr>
+                                <td>일반택시(환경친화적자동차)</td>
+                                <td>6년</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">자동차대여사업용</td>
+                                <td>경형 · 소형· 대형</td>
+                                <td>5년</td>
+                              </tr>
+                              <tr>
+                                <td>대형</td>
+                                <td>8년</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">특수여객자동차운송사업용</td>
+                                <td>경형 · 소형· 대형</td>
+                                <td>6년</td>
+                              </tr>
+                              <tr>
+                                <td>대형</td>
+                                <td>10년</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">승합자동차</td>
+                                <td colspan="2">전세버스운송사업용 또는 특수여객자동차운송사업용</td>
+                                <td>11년</td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">기타사업용</td>
+                                <td>9년</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">화물자동차</td>
+                                <td colspan="2">일반화물자동차운송사업용</td>
+                                <td>13년</td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">개인화물자동차운송사업용</td>
+                                <td>13년</td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">이륜자동차</td>
+                                <td>4년</td>
+                              </tr>
+                           </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <em class="sm_ttl">나. 농업기계</em>
+                      <div class="table_wrap gray_table car_table">
+                        <div class="mo_scroll">
+                          <table>
+                            <caption class="hidden">농업기계안내표</caption>
+                            <thead>
+                              <tr>
+                                <th scope="col">차종</th>
+                                <th scope="col">내용연수</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td >콤바인(자탈기), 이앙기, 관리기, 이식기, 예취기</td>
+                                <td>5년</td>
+                              </tr>
+                               <tr>
+                                <td >동력경운기, 스피드 스프레이어</td>
+                                <td>6년</td>
+                              </tr>
+                               <tr>
+                                <td >농업트랙터, 농용엔진, 곡물건조기</td>
+                                <td>8년</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <em class="sm_ttl">다. 건설기계</em>
+                      <div class="table_wrap gray_table car_table">
+                        <div class="mo_scroll">
+                          <table>
+                            <caption class="hidden">건설기계안내표</caption>
+                            <thead>
+                              <tr>
+                                <th scope="col">차종</th>
+                                <th scope="col">내용연수</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>굴삭기, 로더, 지게차, 덤프트럭, 콘크리트피니셔, 콘크리트펌프, 도로보수트럭, 노면파쇄기, 터널용고속작업차</td>
+                                <td>10년</td>
+                              </tr>
+                              <tr>
+                                <td >콘크리트살포기, 콘크리트믹서트럭, 아스팔트피니셔, 아스팔트살포기, 골재살포기, 항타및항발기, 선별기</td>
+                                <td>13년</td>
+                              </tr>
+                              <tr>
+                                <td >불도저, 기중기, 타워크레인롤러, 노상안정기, 콘크리트뱃칭플랜트, 아스팔트믹싱플랜트, 쇄석기, 공기압축기,<br> 사리채취기, 준설선, 노면충정장비, 스크레이퍼, 모터그레이더</td>
+                                <td>15년</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div>
-                    <em class="sm_ttl">다. 건설기계</em>
-                    <div class="table_wrap gray_table car_table">
-                      <div class="mo_scroll">
-                        <table>
-                          <caption class="hidden">건설기계안내표</caption>
-                          <thead>
-                            <tr>
-                              <th scope="col">차종</th>
-                              <th scope="col">내용연수</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>굴삭기, 로더, 지게차, 덤프트럭, 콘크리트피니셔, 콘크리트펌프, 도로보수트럭, 노면파쇄기, 터널용고속작업차</td>
-                              <td>10년</td>
-                            </tr>
-                            <tr>
-                              <td >콘크리트살포기, 콘크리트믹서트럭, 아스팔트피니셔, 아스팔트살포기, 골재살포기, 항타및항발기, 선별기</td>
-                              <td>13년</td>
-                            </tr>
-                            <tr>
-                              <td >불도저, 기중기, 타워크레인롤러, 노상안정기, 콘크리트뱃칭플랜트, 아스팔트믹싱플랜트, 쇄석기, 공기압축기,<br> 사리채취기, 준설선, 노면충정장비, 스크레이퍼, 모터그레이더</td>
-                              <td>15년</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+           </div>
           </div>
 
           <!-- 적용방법 -->
           <div role="tabpanel" id="tabpanel4" class="tab_cont"  aria-labelledby="tab4">
-            <ul class="text_list">
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl  mb-0">보험가입금액은 1만원단위로 한다.</strong>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl  mb-0">기준가액표에 기재되어 있지 아니한 년식의 자동차는 해당 용도차량의 가장 오래된 년식의 가액을 참고하여 기준가액을 정한다.</strong>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl  mb-0">대여사업용 자동차로서 영업용 기준가액표에 기재되어 있지 아니한 자동차의 경우에도 자가용 기준가액표상의 동종 또는 유사 차량의 최근년도 가액을 
-                    기준으로 하여 표준 감가상각잔존율을 적용, 기준가액을 정한다.</strong>
-                </div>
-              </li>
-               <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">가액적용시의 참고사항</strong>
-                  <p class="text">본 차량기준가액표상의 차량가액은 차량의 상태, 주행거리 등에 따라 다양한 시장거래가액의 평균치를 기준으로 책정되어 자기차량손해의 계약체결 및 손해액 결정시 기준가액으로서 적용되므로, 대물배상책임의 지급 보험금 산출시 적용되는 시가와는 차이가 있을 수 있다.</p>
-                </div>
-              </li>
-             
-            </ul>
+            <div class="car_price_box">
+              <ul class="text_list">
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl  mb-0">보험가입금액은 1만원단위로 한다.</strong>
+                  </div>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl  mb-0">기준가액표에 기재되어 있지 아니한 년식의 자동차는 해당 용도차량의 가장 오래된 년식의 가액을 참고하여 기준가액을 정한다.</strong>
+                  </div>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl  mb-0">대여사업용 자동차로서 영업용 기준가액표에 기재되어 있지 아니한 자동차의 경우에도 자가용 기준가액표상의 동종 또는 유사 차량의 최근년도 가액을 
+                      기준으로 하여 표준 감가상각잔존율을 적용, 기준가액을 정한다.</strong>
+                  </div>
+                </li>
+                 <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">가액적용시의 참고사항</strong>
+                    <p class="text">본 차량기준가액표상의 차량가액은 차량의 상태, 주행거리 등에 따라 다양한 시장거래가액의 평균치를 기준으로 책정되어 자기차량손해의 계약체결 및 손해액 결정시 기준가액으로서 적용되므로, 대물배상책임의 지급 보험금 산출시 적용되는 시가와는 차이가 있을 수 있다.</p>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
           </div>
 
           <!-- 항목설명 -->
           <div role="tabpanel" id="tabpanel5"  class="tab_cont" aria-labelledby="tab5">
-            <ul class="text_list">
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">형식</strong>
-                  <p class="text">이 기준가액표에 기재되어 있는 형식은 해당자동차의 차명을 나타내는 것으로서 자동차 등록증의 형식란에 기재되어 있다.</p>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">세분</strong>
-                  <p class="text">
-                    동일형식의 자동차를 내장, 외장, 좌석구조, 변속기 등이 상이함에 따라 구별하기 위한 항목으로 자동차 등록증에 기재되어 있지 아니하고 보증서, 주문서, 또는 제조회사의 판매용 
-                    카타로그 등에 기재되어 있다.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">세분란의 기호 </strong>
-                  <div>
-                    <em class="sm_ttl">가."*" 표</em>
+            <div class="car_price_box">
+              <ul class="text_list">
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">형식</strong>
+                    <p class="text">이 기준가액표에 기재되어 있는 형식은 해당자동차의 차명을 나타내는 것으로서 자동차 등록증의 형식란에 기재되어 있다.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">세분</strong>
                     <p class="text">
-                      통상적으로 해당자동차에 스테레오가 부착되어 있어 기준가액에 스테레오의 가격이 포함되어 있는 경우로서 세분란의 우측에 표시되어 있다.
+                      동일형식의 자동차를 내장, 외장, 좌석구조, 변속기 등이 상이함에 따라 구별하기 위한 항목으로 자동차 등록증에 기재되어 있지 아니하고 보증서, 주문서, 또는 제조회사의 판매용 
+                      카타로그 등에 기재되어 있다.
                     </p>
                   </div>
-                  <div>
-                    <em class="sm_ttl">나."#" 표</em>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">세분란의 기호 </strong>
+                    <div>
+                      <em class="sm_ttl">가."*" 표</em>
+                      <p class="text">
+                        통상적으로 해당자동차에 스테레오가 부착되어 있어 기준가액에 스테레오의 가격이 포함되어 있는 경우로서 세분란의 우측에 표시되어 있다.
+                      </p>
+                    </div>
+                    <div>
+                      <em class="sm_ttl">나."#" 표</em>
+                      <p class="text">
+                        통상적으로 해당자동차에 에어컨 장치가 부착되어 있어 기준가액에 스테레오의 가격이 포함되어 있는 경우로써 세분란의 우측에 표시되어 있다.
+                      </p>
+                    </div>
+                    <div>
+                      <em class="sm_ttl">다."ⓐ" 표</em>
+                      <p class="text">
+                        통상적으로 해당자동차에 스테레오와 칼라유리가 동시에 부착되어 있어 기준가액에 스테레오와 칼라유리의 가격이 포함된 경우로서 세분란의 우측에 표시되어 있다.
+                      </p>
+                    </div>
+                    <div>
+                      <em class="sm_ttl">라."$" 표</em>
+                      <p class="text">
+                        통상적으로 해당자동차에 에어컨과 운전석 에어백이 동시에 부착되어 있어 기준가액에 이들 가격이 포함된 경우로서 세분란의 우측에 표시되어 있다 
+                      </p>
+                    </div>
+                    <div>
+                      <em class="sm_ttl">마."&" 표</em>
+                      <p class="text">
+                        통상적으로 해당자동차에 에어컨과 운전석 에어백 및 조수석 에어백이 동시에 부착되어 있어 기준가액에 이들 가격이 포함된 경우로서 세분란의 우측에 표시되어 있다.
+                      </p>
+                    </div>
+                    <div>
+                      <em class="sm_ttl">바."^" 표</em>
+                      <p class="text">
+                        통상적으로 해당자동차에 이모빌라이져나 GPS가 부착되어 있어 기준가액에 이들 가격이 포함되어 있는 경우로써 세분란의 우측에 표시되어 있다.
+                      </p>
+                    </div>
+                    <div>
+                      <em class="sm_ttl">사."-" 표</em>
+                      <p class="text">
+                        해당사항이 없음을 나타낸다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">배기량</strong>
                     <p class="text">
-                      통상적으로 해당자동차에 에어컨 장치가 부착되어 있어 기준가액에 스테레오의 가격이 포함되어 있는 경우로써 세분란의 우측에 표시되어 있다.
+                      승용자동차의 엔진 배기용적을 표시하는 것으로 자동차등록증에 기재되어 있다. 비사업용 승용자동차의 현행 배상책임요율은 배기량에 따라 소형A(1000cc이하), 소형B(1000cc초과 
+                      1600cc이하), 중형(1600cc초과 2000cc이하), 대형(2000cc초과) 등으로 구분되어 있다.
                     </p>
                   </div>
-                  <div>
-                    <em class="sm_ttl">다."ⓐ" 표</em>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">형식란 또는 정원(적재정량)란의 ".." 표</strong>
                     <p class="text">
-                      통상적으로 해당자동차에 스테레오와 칼라유리가 동시에 부착되어 있어 기준가액에 스테레오와 칼라유리의 가격이 포함된 경우로서 세분란의 우측에 표시되어 있다.
+                      해당사항이 미상임을 나타낸다.
                     </p>
                   </div>
-                  <div>
-                    <em class="sm_ttl">라."$" 표</em>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">연도 및 최초신규등록년도</strong>
+                    <div class="text_group">
+                      <p class="text flex">
+                        <i>·</i>
+                         차량기준가액표상 연도는 최초신규등록년도를 기준으로 하며, 최초신규등록년도란 차량출고 이후 자동차관리법에 의하여 자동차로 처음 등록한 연도를 말한다. <br>
+                          단, 최초등록년도 이전에 운행한 사실이 객관적으로 입증되는 경우는 해당연도를 적용할 수 있다.
+                      </p>
+                      <p class="text flex">
+                        <i>·</i>
+                        최초신규등록일이 2003년 6월 30일 이전인 차량의 경우 자동차등록증상 기재된 년식을 말한다.
+                      </p>
+                       <p class="text flex">
+                        <i>·</i>
+                        본 가액표의 연도구분중 2018A는 최초등록일로부터 6개월 이하인 차량이고, 2018B는 2018년도 차량중 최초등록 일로부터 6개월을 초과한 차량을 말한다.  <br>
+                        단, 보험기간 개시후 10일을 초과하여 최초등록한 2018년도 임시운행 자동차의 경우 최초등록일로부터 6개월 이내에 사고가 발생했을지라도 보험기간 개시후 6개월 10일을 초과했을시 
+                        기준가액은 2018B를 적용한다.
+                      </p>
+                   </div>
+                  </div>
+                </li>
+                <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">전산번호</strong>
                     <p class="text">
-                      통상적으로 해당자동차에 에어컨과 운전석 에어백이 동시에 부착되어 있어 기준가액에 이들 가격이 포함된 경우로서 세분란의 우측에 표시되어 있다 
+                      해당 자동차에 부여된 고유전산번호로서 청약서의 차명별 전산번호란에 기재하며, 동 전산번호에 의해 해당 자동차를 식별할 수 있도록 입력·기록한다. 단, 탑 및 탱크, 외국산 자동차등에 
+                      기재되어 있는 전산번호는 계약관리상의 편의를 위하여 참고로 활용될 수 있도록 기재한 것이다
                     </p>
                   </div>
-                  <div>
-                    <em class="sm_ttl">마."&" 표</em>
+                </li>
+                 <li>
+                  <i class="bk_ico"></i>
+                  <div class="value_box">
+                    <strong class="mid_ttl">등급</strong>
                     <p class="text">
-                      통상적으로 해당자동차에 에어컨과 운전석 에어백 및 조수석 에어백이 동시에 부착되어 있어 기준가액에 이들 가격이 포함된 경우로서 세분란의 우측에 표시되어 있다.
+                      해당 자동차의 수리성·손상성 및 손해실적에 따라 부여된 요율등급으로서 계약인수 및 관리상의 편의를 위하여 참고로 활용될 수 있도록 기대한 것이다.
                     </p>
                   </div>
-                  <div>
-                    <em class="sm_ttl">바."^" 표</em>
-                    <p class="text">
-                      통상적으로 해당자동차에 이모빌라이져나 GPS가 부착되어 있어 기준가액에 이들 가격이 포함되어 있는 경우로써 세분란의 우측에 표시되어 있다.
-                    </p>
-                  </div>
-                  <div>
-                    <em class="sm_ttl">사."-" 표</em>
-                    <p class="text">
-                      해당사항이 없음을 나타낸다.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">배기량</strong>
-                  <p class="text">
-                    승용자동차의 엔진 배기용적을 표시하는 것으로 자동차등록증에 기재되어 있다. 비사업용 승용자동차의 현행 배상책임요율은 배기량에 따라 소형A(1000cc이하), 소형B(1000cc초과 
-                    1600cc이하), 중형(1600cc초과 2000cc이하), 대형(2000cc초과) 등으로 구분되어 있다.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">형식란 또는 정원(적재정량)란의 ".." 표</strong>
-                  <p class="text">
-                    해당사항이 미상임을 나타낸다.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">연도 및 최초신규등록년도</strong>
-                  <div class="text_group">
-                    <p class="text flex">
-                      <i>·</i>
-                       차량기준가액표상 연도는 최초신규등록년도를 기준으로 하며, 최초신규등록년도란 차량출고 이후 자동차관리법에 의하여 자동차로 처음 등록한 연도를 말한다. <br>
-                        단, 최초등록년도 이전에 운행한 사실이 객관적으로 입증되는 경우는 해당연도를 적용할 수 있다.
-                    </p>
-                    <p class="text flex">
-                      <i>·</i>
-                      최초신규등록일이 2003년 6월 30일 이전인 차량의 경우 자동차등록증상 기재된 년식을 말한다.
-                    </p>
-                     <p class="text flex">
-                      <i>·</i>
-                      본 가액표의 연도구분중 2018A는 최초등록일로부터 6개월 이하인 차량이고, 2018B는 2018년도 차량중 최초등록 일로부터 6개월을 초과한 차량을 말한다.  <br>
-                      단, 보험기간 개시후 10일을 초과하여 최초등록한 2018년도 임시운행 자동차의 경우 최초등록일로부터 6개월 이내에 사고가 발생했을지라도 보험기간 개시후 6개월 10일을 초과했을시 
-                      기준가액은 2018B를 적용한다.
-                    </p>
-                 </div>
-                </div>
-              </li>
-              <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">전산번호</strong>
-                  <p class="text">
-                    해당 자동차에 부여된 고유전산번호로서 청약서의 차명별 전산번호란에 기재하며, 동 전산번호에 의해 해당 자동차를 식별할 수 있도록 입력·기록한다. 단, 탑 및 탱크, 외국산 자동차등에 
-                    기재되어 있는 전산번호는 계약관리상의 편의를 위하여 참고로 활용될 수 있도록 기재한 것이다
-                  </p>
-                </div>
-              </li>
-               <li>
-                <i class="bk_ico"></i>
-                <div class="value_box">
-                  <strong class="mid_ttl">등급</strong>
-                  <p class="text">
-                    해당 자동차의 수리성·손상성 및 손해실적에 따라 부여된 요율등급으로서 계약인수 및 관리상의 편의를 위하여 참고로 활용될 수 있도록 기대한 것이다.
-                  </p>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
     
           </div>
 
