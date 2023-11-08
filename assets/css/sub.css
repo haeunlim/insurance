@@ -161,10 +161,30 @@ i.bk_ico {
   flex: 0 0 auto;
 }
 
+.sect_ttl{
+}
 
+figure + .sect_ttl{
+  margin-top: 40px;
+}
+.sect_ttl.lg{
+  font-size: 34px;
+  font-weight: 800;
+}
+.sub_text_box{
+  font-size: 18px;
+  line-height: 1.333;
+  color: #454545;
+  font-weight: 600;
+}
 
+.sect_ttl + .sub_text_box{
+  margin-top: 30px;
+}
 
-
+.btn_wrap{
+  margin-top: 24px;
+}
 
 
 /* 리스트 검색 */
@@ -1439,8 +1459,34 @@ i.bk_ico {
 }
 
 
+/* inquiry service sect*/
 
 
+.arrow_text span {
+  display: inline-block;
+  padding-right: 16px;
+  background: no-repeat center right;
+}
+.arrow_text.white span {
+  background-image: url(../img/common/ico_arrow_white.png);
+}
+.arrow_text.black2 span {
+  background-image: url(../img/common/ico_arrow_black2.png);
+}
+.arrow_text.gray span {
+  background-image: url(../img/common/ico_arrow_gray.png);
+}
+.arrow_text.green span {
+  background-image: url(../img/common/ico_arrow_green.png);
+}
+
+.inquiry_service_sect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
 
 
 
