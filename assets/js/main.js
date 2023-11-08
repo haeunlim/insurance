@@ -17,7 +17,7 @@ var Main = {
     var mainVisualSlider = Swiper;
     var init = false;
     function swiperMode() {
-      let mobile = window.matchMedia("(min-width: 0px) and (max-width: 850px)");
+      let mobile = window.matchMedia("(min-width: 0px) and (max-width: 768px)");
 
       if (mobile.matches) {
         if (!init) {
@@ -64,7 +64,7 @@ var Main = {
   mainTopinformationF: function(){
     mainTopInforSwiper = new Swiper('.supplementary_information_slider', {
         slidesPerView: 3,
-        spaceBetween: 20,
+        spaceBetween: 15,
         loop: true,
         loopAdditionalSlides: 1,
         navigation: {
@@ -74,7 +74,7 @@ var Main = {
         watchOverflow: true,
         breakpoints: {
           768: {
-            spaceBetween: 15,
+            spaceBetween: 20,
           },
         },
       });
@@ -94,10 +94,10 @@ var Main = {
       let slideInx = 0; //현재 슬라이드 index
 
       //디바이스 체크
-      let oldWChk = window.innerWidth > 850 ? "pc" : "mo";
+      let oldWChk = window.innerWidth > 768 ? "pc" : "mo";
       sliderAct();
       $(window).on("resize", function () {
-        let newWChk = window.innerWidth > 850 ? "pc" : "mo";
+        let newWChk = window.innerWidth > 768 ? "pc" : "mo";
         if (newWChk != oldWChk) {
           oldWChk = newWChk;
           sliderAct();
@@ -117,9 +117,7 @@ var Main = {
         //slidesPerView 옵션 설정
 
         myKeySwiper = new Swiper(`.my_key_services_slider${index}`, {
-          
-          spaceBetween: 15,
-          slidesPerView: 2,
+         
           loop: true,
           loopAdditionalSlides: 1,
           observer: true,
@@ -130,11 +128,18 @@ var Main = {
           },
           watchOverflow: true,
           breakpoints: {
-            768: {
+            1024: {
               slidesPerView: 4,
               spaceBetween: 30,
             },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
           },
+          slidesPerView: 2,
+          spaceBetween: 15,
+          
         });
       }
     });
@@ -150,10 +155,10 @@ var Main = {
       let insuranceSwiper = undefined;
       let slideNum = $this.find(".swiper-slide").length;
       let slideInx = 0;
-      let oldWChk = window.innerWidth > 850 ? "pc" : "mo";
+      let oldWChk = window.innerWidth > 768 ? "pc" : "mo";
       sliderAct2();
       $(window).on("resize", function () {
-        let newWChk = window.innerWidth > 850 ? "pc" : "mo";
+        let newWChk = window.innerWidth > 768 ? "pc" : "mo";
         if (newWChk != oldWChk) {
           oldWChk = newWChk;
           sliderAct2();
@@ -199,9 +204,13 @@ var Main = {
             },
           },
           breakpoints: {
-            768: {
+            1024: {
               slidesPerView: 3,
               spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 15,
             },
           },
         });

@@ -689,7 +689,7 @@ input[type=tel]:focus {
 .btn-point {
   background-color: var(--bs-point) !important;
   border-color: var(--bs-point) !important;
-  color: #fff;
+  color: #fff !important;
 }
 .btn-default {
   background-color: var(--bs-white);

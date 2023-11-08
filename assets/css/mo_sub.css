@@ -1429,7 +1429,17 @@
 
 
 
-
+.arrow_text span {
+  padding-right: 1rem;
+  line-height:0.86666rem ;
+  background-size: 0.7rem 0.86666rem;
+}
+.arrow_text.white span {
+  background-image: url(../img/common/ico_arrow_white_mo.png);
+}
+.arrow_text.green span {
+  background-image: url(../img/common/ico_arrow_green_mo.png);
+}
 
 
 
