@@ -239,6 +239,7 @@ figure.cover-img img {
   position: absolute;
   top: 93px; left: 0;
   background: #fff;
+  border-top: 1px solid #dbdbdb;
   width: 100%; 
   height:calc(var(--vh, 1vh) * 100 - 93px);
   z-index: -1;
@@ -356,6 +357,7 @@ figure.cover-img img {
   background: #fff;
   display: none;
   z-index: 88888;
+  border-top: 1px solid #dbdbdb;
 }
 .h_search_box {
   padding:40px 0 50px ;

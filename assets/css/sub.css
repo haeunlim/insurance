@@ -981,17 +981,17 @@ i.bk_ico {
   margin-top: 40px;
   margin-bottom: 20px;
 }
-.agency_page .table_wrap table th {
+.agency_page.table_wrap table th {
   padding: 15px 5px;
 }
-.agency_page .table_wrap table td {
+.agency_page.table_wrap table td {
   padding: 0;
 }
-.agency_page .table_wrap table a {
+.agency_page.table_wrap table a {
   display: flex;
 }
-.agency_page .table_wrap table .agency_name,
-.agency_page .table_wrap table .agency_link {
+.agency_page.table_wrap table .agency_name,
+.agency_page.table_wrap table .agency_link {
   width: 50%;
 }
 .agency_page table a p {
