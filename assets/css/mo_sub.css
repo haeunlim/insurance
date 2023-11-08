@@ -142,10 +142,10 @@
     margin-top: 1.4286rem;
 }
 
-  .car_price .table_box .value_box >div + div {
+  .car_price_box .table_box .value_box >div + div {
     margin-top: 2.1429rem;
   }
-  .car_price .table_box .value_box .sm_ttl {
+  .car_price_box .table_box .value_box .sm_ttl {
     margin-bottom:.7143rem;
   }
 
@@ -195,7 +195,9 @@
     z-index: 90;
     border: .0714rem solid #dbdbdb; ;
   }
-
+  .tab_dep1 ul li {
+    width: 100%;
+  }
   .tab_dep1 ul li.on a,
   .tab_dep1 ul li a {
     display: block;
@@ -216,9 +218,9 @@
     width: 11.4286rem;
     padding:0
   }
-  .tab_dep1 ul li + li a {
-    /* border-left: 1px solid #dbdbdb; */
-  }
+  .tab_dep1 ul li:nth-child(4) a {
+    border-left: none
+}
 
   /* tab_dep2 */
   .tab_dep2 {
@@ -598,40 +600,40 @@
     width: 100%;
   }
   
-  .interest_down .row_table_style table,
-  .interest_down .row_table_style tbody,
-  .interest_down .row_table_style thead,
-  .interest_down .row_table_style tr,
-  .interest_down .row_table_style th,
-  .interest_down .row_table_style td {
+  .interest_down.row_table_style table,
+  .interest_down.row_table_style tbody,
+  .interest_down.row_table_style thead,
+  .interest_down.row_table_style tr,
+  .interest_down.row_table_style th,
+  .interest_down.row_table_style td {
     display: block;
     box-sizing: border-box;
   }
-  .traffic_accident .row_table_style col.view,
-  .traffic_accident .row_table_style th.view,
-  .traffic_accident .row_table_style col.date,
-  .traffic_accident .row_table_style th.date ,
-  .interest_down .row_table_style col.file,
-  .interest_down .row_table_style th.file {
+  .traffic_accident.row_table_style col.view,
+  .traffic_accident.row_table_style th.view,
+  .traffic_accident.row_table_style col.date,
+  .traffic_accident.row_table_style th.date ,
+  .interest_down.row_table_style col.file,
+  .interest_down.row_table_style th.file {
     display: none ;
   }
-  .traffic_accident .row_table_style table thead tr ,
-  .interest_down .row_table_style table tbody tr,
-  .interest_down .row_table_style table thead tr {
+  .traffic_accident.row_table_style table thead tr ,
+  .interest_down.row_table_style table tbody tr,
+  .interest_down.row_table_style table thead tr {
     display: flex;
     width: 100%;
   }
-  .interest_down .row_table_style table thead th {
+  .interest_down.row_table_style table thead th {
     display: block;
     padding: 1.0714rem .3571rem;
   }
-  .traffic_accident .row_table_style table .num ,
-  .interest_down .row_table_style table .num {
+  .traffic_accident.row_table_style table .num ,
+  .interest_down.row_table_style table .num {
     width: 3.0714rem;
     flex: 0 0 auto;
   }
   
-  .interest_down .row_table_style table .bbs_ttl {
+  .interest_down.row_table_style table .bbs_ttl {
     width: calc(100% - 3.0714rem);
     padding-right: 0;
   }
@@ -649,13 +651,13 @@
   .row_table_style table thead th + th::after {
     display: none;
   }
-  .interest_down .row_table_style table .num {
+  .interest_down.row_table_style table .num {
     border-right: .0714rem solid #dbdbdb;
   } 
-  .interest_down .row_table_style table tbody .file {
+  .interest_down.row_table_style table tbody .file {
     padding: 0;
   }
-  .interest_down .row_table_style table tbody .file a {
+  .interest_down.row_table_style table tbody .file a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -663,14 +665,14 @@
     font-size: 0; color: transparent;
     border: none !important;
   }
-  .interest_down .row_table_style table tbody .file a i{
+  .interest_down.row_table_style table tbody .file a i{
     width: .4286rem; height: .8571rem;
     background-size:.4286rem auto ;
     background-image: url(../img/btn/interest_down_ico.png);
     margin: 0;
   }
   .car_cost  .file_down,
-  .interest_rate .file_down {
+  .interest_rate_page .file_down {
     width: 100%;
     text-align: left;
     justify-content: space-between;
@@ -685,7 +687,7 @@
     margin: 0;
   }
   .car_cost  .file_down i,
-  .interest_rate .file_down i {
+  .interest_rate_page .file_down i {
     width: .9643rem;
     height: 1.0714rem;
     background-size: .9643rem auto;
@@ -699,17 +701,17 @@
   .mo-table-style.row_table_style tr,
   .mo-table-style.row_table_style th,
   .mo-table-style.row_table_style td ,
-  .traffic_accident .row_table_style table,
-  .traffic_accident .row_table_style tbody,
-  .traffic_accident .row_table_style thead,
-  .traffic_accident .row_table_style tr,
-  .traffic_accident .row_table_style th,
-  .traffic_accident .row_table_style td {
+  .traffic_accident.row_table_style table,
+  .traffic_accident.row_table_style tbody,
+  .traffic_accident.row_table_style thead,
+  .traffic_accident.row_table_style tr,
+  .traffic_accident.row_table_style th,
+  .traffic_accident.row_table_style td {
     display: block;
     box-sizing:border-box;
   }
   .mo-table-style.row_table_style table,
-  .traffic_accident .row_table_style table  {
+  .traffic_accident.row_table_style table  {
     border-left: .0714rem solid #dbdbdb;
     border-right: .0714rem solid #dbdbdb;
   }
@@ -723,7 +725,7 @@
     text-align: center;
     width: 100%;
   } 
-  .traffic_accident .row_table_style table tr ,
+  .traffic_accident.row_table_style table tr ,
   .mo-table-style.row_table_style table tr {
     display: grid;
     grid-template-areas:
@@ -731,15 +733,15 @@
     grid-template-columns: 3.0357rem auto ;
   }  
   .mo-table-style.row_table_style table tbody tr:first-child,
-  .traffic_accident .table_wrap table tbody tr:first-child {
+  .traffic_accident.table_wrap table tbody tr:first-child {
     border-top: 0.0714rem solid #aaaaaa;
   }
   .mo-table-style.row_table_style table tbody tr:first-child td,
-  .traffic_accident .table_wrap table tbody tr:first-child td {
+  .traffic_accident.table_wrap table tbody tr:first-child td {
     border-top: none;
   }
   .mo-table-style.row_table_style table tbody tr::after ,
-  .traffic_accident .row_table_style table tbody tr::after {
+  .traffic_accident.row_table_style table tbody tr::after {
     content: '';
     display: block;
     width: 3.1071rem ; height: 2.1429rem;
@@ -754,7 +756,7 @@
 
 
   /* 모바일 테이블 샘플 */
-  .traffic_accident .row_table_style table tbody tr,
+  .traffic_accident.row_table_style table tbody tr,
   .mo-table-style.row_table_style table tbody tr {
     display: flex;
     flex-wrap: wrap;
@@ -763,14 +765,14 @@
     padding-right: 3.1071rem  ;
   }
 
-  .traffic_accident .row_table_style table tr td,
+  .traffic_accident.row_table_style table tr td,
   .mo-table-style.row_table_style table tr td {
     border-top: none;
     color: #454545;
     font-weight: 400;
     position: relative;
   }
-  .traffic_accident .row_table_style table tbody .num,
+  .traffic_accident.row_table_style table tbody .num,
   .mo-table-style.row_table_style table tbody .num {
     position: absolute;
     top: 50%; left: 0;
@@ -778,7 +780,7 @@
     transform: translateY(-50%);
   }
   .mo-table-style.row_table_style table tr .num ,
-  .traffic_accident .row_table_style table tr .num {
+  .traffic_accident.row_table_style table tr .num {
     border-right: .0714rem solid #dbdbdb;
     display: flex;
     align-items: center;
@@ -787,14 +789,14 @@
     color: #252525;
   }
   .mo-table-style.row_table_style table tr .bbs_ttl ,
-  .traffic_accident .row_table_style table tr .bbs_ttl {
+  .traffic_accident.row_table_style table tr .bbs_ttl {
     padding-bottom: 0;
     width: 100%;
     padding-right: 0;
     font-weight: 600;
     color: #252525;
   }
-  .traffic_accident .row_table_style table tr td::before ,
+  .traffic_accident.row_table_style table tr td::before ,
   .mo-table-style.row_table_style  table tr td::before {
     font-size: .9286rem;
     margin-right: .2857rem;
@@ -806,7 +808,7 @@
     content: '작성자';
   }
   .mo-table-style.row_table_style table tr .view::before,
-  .traffic_accident .row_table_style table tr .view::before {
+  .traffic_accident.row_table_style table tr .view::before {
     content: '조회수';
   }
   .mo-table-style.row_table_style table tr .view {
@@ -814,7 +816,7 @@
   }
 
   .mo-table-style.row_table_style  table tr .date::before,
-  .traffic_accident .row_table_style table tr .date::before {
+  .traffic_accident.row_table_style table tr .date::before {
     content: '등록일';
   }
 
@@ -827,7 +829,7 @@
     top: 50%; right: 0;
     transform: translateY(-50%);
   }
-  .traffic_accident .row_table_style table tr .view::after {
+  .traffic_accident.row_table_style table tr .view::after {
     content: '';
     display: block;
     width: .0714rem; height: .6429rem ;
@@ -851,13 +853,13 @@
   .text_list .value_box {
     /* width: calc(100% - 1.6071rem); */
   }
-  .car_price .table_wrap {
+  .car_price_box .table_wrap {
 
   }
-  .car_price .table_wrap.gray_table table tbody td:last-child {
+  .car_price_box .table_wrap.gray_table table tbody td:last-child {
     width: 6.4286rem;
   }
-  .car_price .table_wrap.gray_table table tbody td br {
+  .car_price_box .table_wrap.gray_table table tbody td br {
     display: block;
   }
 
@@ -929,7 +931,7 @@
     margin-right: 0;
     margin-top: 1.7857rem;
   }
-  .ins_info .cta_btn {
+  .cta_btn {
     max-width: inherit;
     margin: 0 auto .8571rem;
   }
@@ -939,20 +941,20 @@
     font-size: 1rem;
   }
 
-  .car_price .tip_info {
+  .car_price_box .tip_info {
     margin: 1.7857rem 0 1.0714rem
   }
-  .car_price .bg_box {
+  .car_price_box .bg_box {
     padding: 1.2143rem 1.0714rem;
     border-radius: .2143rem;
   }
-  .car_price .bg_box dl {
+  .car_price_box .bg_box dl {
     display: flex;
     line-height: 1.9;
     width: 50%;
     font-size: .9286rem;
   }
-  .car_price .bg_box dl dt {
+  .car_price_box .bg_box dl dt {
     margin-right: .2857rem;
   }
   .my_car_search .in-form {
@@ -1109,9 +1111,7 @@
     padding:.7143rem 1.4286rem 0 ;
   }
 
-  .repair_standard .text_list li.block .value_box {
-    width: 100%;
-  }
+
   .gallery_list {
     --mo-mg-t: 2.1429rem;
   }
