@@ -25,6 +25,12 @@
   position: absolute;
   top: -15px;  right: -50px;
 }
+.sub_visual.my_insurance .inner::after {
+  width: 207px ; height: 182px;
+  background-image: url(../img/sub/info_Visual_bg_ico02.png);
+  top: -30px;  right: -10px;
+}
+
 .sub_visual.ins_info .inner::after {
   width: 262px ; height: 185px;
   background-image: url(../img/sub/info_Visual_bg_ico.png);
@@ -161,12 +167,6 @@ i.bk_ico {
   flex: 0 0 auto;
 }
 
-.sect_ttl{
-}
-
-figure + .sect_ttl{
-  margin-top: 40px;
-}
 .sect_ttl.lg{
   font-size: 34px;
   font-weight: 800;
@@ -1480,7 +1480,7 @@ figure + .sect_ttl{
   background-image: url(../img/common/ico_arrow_green.png);
 }
 
-.inquiry_service_sect{
+.Information_page{
   display: flex;
   flex-direction: column;
   align-items: center;
