@@ -1488,6 +1488,155 @@ i.bk_ico {
   padding-bottom: 60px;
 }
 
+/*  monthly 뷰 */
+.monthly_group {
+  position: relative;
+}
+.monthly_group + .monthly_group {
+  margin-top: 60px;
+}
+.monthly_group .label {
+  display: flex;
+  align-items: center;
+  font-size: 22px ;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+.monthly_group .label i {
+  display: block;
+  margin-right: 10px ;
+  width: 19px; height: 11px;
+  background: no-repeat center /cover;
+  background-image: url(../img/ico/monthly_ico.png);
+}
+.monthly_group .border > li,
+.monthly_group .border > div {
+  box-shadow: 0px 6px 6.96px 1.04px rgba(0, 0, 0, 0.04);
+  border: 1px solid #dbdbdb;
+  border-radius: 16px;
+}
+.monthly_group .monthly_more {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: auto;
+}
+.monthly_group .monthly_more i {
+  margin-left: 10px;
+  background: no-repeat center/ cover;
+  background-image: url(../img/ico/monthly_more.png);
+  display: block;
+  width: 7px; height: 15px;
+}
+.monthly_group .list_more {
+  position: absolute;
+  top:15px; right: 0;
+}
+.monthly_group .trend_list,
+.monthly_group .new_list {
+  --mg-x : 10px;
+  --mg-t : 0
+}
+.monthly_group .trend_list li {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.monthly_group .trend_list li .mid_ttl {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+}
+.monthly_group .trend_list li .text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom:30px ;
+}
+.monthly_group .new_list li em ,
+.monthly_group .trend_list li em {
+  color:#656565 ;
+  font-weight: 600 ;
+  display: block;
+  margin-bottom: 10px;
+}
+.monthly_group .new_list li .mid_ttl {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.monthly_group .new_list li,
+.monthly_group .trend_list li {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.monthly_group .new_list li .text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-bottom:30px ;
+}
+
+.monthly_group .img_text_wrap .flex  {
+  padding: 20px ;
+}
+.monthly_group .img_text_wrap .img_box {
+  width: 44%;
+}
+.monthly_group .img_text_wrap .img_box figure {
+  display: block;
+  width: 100%;
+  padding-top: 60%;
+}
+.monthly_group .img_text_wrap .monthly_text_box {
+  width: 56%;
+  padding-left:40px ;
+  padding-top: 34px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+.monthly_group .monthly_text_box .ttl {
+  font-size: 22px ;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+.monthly_group .monthly_text_box .text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-bottom:30px ;
+}
+.monthly_group .chart_box {
+  padding: 20px;
+}
+.monthly_group .chart_box .monthly_more {
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.monthly_board .bbv_mid {
+  padding-bottom: 60px ;
+  border-bottom: 1px solid #dbdbdb;
+}
 
 
 
