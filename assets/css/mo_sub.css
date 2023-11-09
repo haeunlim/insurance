@@ -305,14 +305,14 @@
   }
 
   /* thumb_list */
-  .thumb_list {
+  /* .thumb_list {
     --mo-mg-t: 1.4286rem;
-  }
-  .thumb_list li a {
+  } */
+  /* .thumb_list li a {
     border: .0714rem solid #dbdbdb;
     padding: 1.2857rem 1.2857rem 1.5714rem;
     border-radius: .3571rem;
-  }
+  } */
   .thumb_list .cover-img {
     border-radius: .2143rem;
   }
@@ -1255,15 +1255,17 @@
   width: 20.5714rem;
 }
 
-
+.report + .content .search_filter,
 .retirement .search_filter {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
 }
+.report + .content .search_filter .list_total,
 .retirement .search_filter .list_total  {
   margin-top: 2.1429rem;
 }
+.report + .content .search_filter + .table_wrap,
 .retirement .search_filter + .table_wrap {
   margin-top: .7143rem;
 }
@@ -1440,6 +1442,104 @@
 .arrow_text.green span {
   background-image: url(../img/common/ico_arrow_green_mo.png);
 }
+
+
+
+
+
+  /* monthly 뷰 */
+  .monthly_group + .monthly_group {
+    margin-top: 2.1429rem;
+  }
+  .monthly_board .bbv_mid {
+    padding-bottom: 2.1429rem;
+    border-bottom: .0357rem solid #dbdbdb;
+  }
+  .monthly_group .label {
+    font-size: 1.1429rem;
+    margin-bottom: .9286rem;
+  }
+  .monthly_group .label i {
+    margin-right: .3571rem;
+    width: 1.3214rem;
+    height: .75rem;
+    background-image: url(../img/ico/monthly_ico_m.png);
+  }
+  .monthly_group .list_more {
+    top: .3571rem;
+    font-size: 1rem
+  }
+  .monthly_group .monthly_more {
+    font-size: .9286rem;
+  } 
+  .monthly_group .monthly_more i {
+    margin-left: .3571rem;
+    background-image: url(../img/ico/monthly_more_m.png);
+    width: .3929rem;
+    height: .75rem;
+  }
+  .monthly_group .border > li, 
+  .monthly_group .border > div {
+    box-shadow: 0rem .2143rem .2486rem .0371rem rgba(0, 0, 0, 0.04);
+    border: .0714rem solid #dbdbdb;
+    border-radius: .5714rem;
+  }
+  .monthly_group .trend_list, 
+  .monthly_group .new_list {
+    --mo-mg-t: .7143rem;
+  }
+  .monthly_group .new_list_wrap ,
+  .monthly_group .trend_list_wrap {
+    padding-top:.0357rem
+  }
+  .monthly_group .new_list li, 
+  .monthly_group .trend_list li {
+    padding: 1.2857rem 1.0714rem;
+  }
+
+  .monthly_group .new_list li em, 
+  .monthly_group .trend_list li em {
+    font-size:.9286rem;
+    margin-bottom: .7143rem;
+  }
+
+  .monthly_group .img_text_wrap .flex {
+    padding: 1.4286rem 1.0714rem;
+    display: block
+  }
+  .monthly_group .img_text_wrap .img_box {
+    width: 100%;
+  }
+
+  .monthly_group .img_text_wrap .monthly_text_box {
+    padding-left: 0;
+    padding-top: 1.0714rem;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .monthly_group .monthly_text_box .ttl {
+    font-size: 1.0714rem;
+    margin-bottom: .7143rem;
+  }
+  .monthly_group .monthly_text_box .text {
+    -webkit-line-clamp: 5;
+    line-height: 1.3;
+    font-size: .9286rem;
+    margin-bottom: .9286rem;
+  }
+  .monthly_group .chart_box {
+    padding: 1.4286rem 1.0714rem;
+  }
+
+  .monthly_group .chart_box .monthly_more {
+    justify-content: flex-start;
+    margin-top: .8571rem;
+}
+
+
+
+
+
 
 
 

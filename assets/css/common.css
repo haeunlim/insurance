@@ -523,9 +523,14 @@ figure.cover-img img {
 .pagination  {
   margin-top: 70px;
 }
+
 .search_group .list + .pagination,
 .row_table_style + .pagination {
   margin-top: 40px;
+}
+.weekly .pagination {
+  padding-top: 40px;
+  border-top: 1px solid #dbdbdb
 }
 .pagination ul{
   display: flex;

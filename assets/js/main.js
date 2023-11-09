@@ -187,22 +187,22 @@ var Main = {
             ),
           },
           watchOverflow: true,
-          on: {
-            init: function () {
-              for (var i = 0; i < 3; i++) {
-                this.slides.eq(i).addClass("active-slide");
-              }
-            },
-            slideChange: function () {
-              var activeIndex = this.activeIndex;
-              this.slides.removeClass("active-slide");
-              for (var i = activeIndex; i <= activeIndex + 2; i++) {
-                if (insuranceSwiper.slides.eq(i)) {
-                  insuranceSwiper.slides.eq(i).addClass("active-slide");
-                }
-              }
-            },
-          },
+          // on: {
+          //   init: function () {
+          //     for (var i = 0; i < 3; i++) {
+          //       this.slides.eq(i).addClass("active-slide");
+          //     }
+          //   },
+          //   slideChange: function () {
+          //     var activeIndex = this.activeIndex;
+          //     this.slides.removeClass("active-slide");
+          //     for (var i = activeIndex; i <= activeIndex + 2; i++) {
+          //       if (insuranceSwiper.slides.eq(i)) {
+          //         insuranceSwiper.slides.eq(i).addClass("active-slide");
+          //       }
+          //     }
+          //   },
+          // },
           breakpoints: {
             1024: {
               slidesPerView: 3,
@@ -218,25 +218,21 @@ var Main = {
         $this.addClass(`insurance_news_slider-${index}`);
       }
 
-      function initializeinsuranceSwiper() {
-        insuranceSwiper.slides.removeClass("active-slide");
-        for (var i = 0; i < 3; i++) {
-          insuranceSwiper.slides.eq(i).addClass("active-slide");
-        }
-      }
+      // function initializeinsuranceSwiper() {
+      //   insuranceSwiper.slides.removeClass("active-slide");
+      //   for (var i = 0; i < 3; i++) {
+      //     insuranceSwiper.slides.eq(i).addClass("active-slide");
+      //   }
+      // }
 
-      $(".insurance_news_sect .insurance_news_tab button").on(
-        "click",
-        function () {
+      $(".insurance_news_sect .insurance_news_tab button").on("click", function () {
           let $this = $(this);
           let target = $this.val();
           insuranceSwiper.destroy();
           sliderAct2()
-          initializeinsuranceSwiper();
+          // initializeinsuranceSwiper();
 
-          $(".insurance_news_sect .insurance_news_slider").removeClass(
-            "active"
-          );
+          $(".insurance_news_sect .insurance_news_slider").removeClass( "active");
           $(".insurance_news_sect .swiper-slide-btn").removeClass("active");
           $("." + target).addClass("active");
           addRemove(this);
