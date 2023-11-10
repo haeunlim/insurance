@@ -388,11 +388,56 @@ i.bk_ico {
   padding-top: 560px;
 }
 
+.key_ins_indicators .badge span{
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.key_ins_indicators  .view_body {
+  border-bottom: none;
+}
+.key_ins_indicators  .view_body .caption {
+  font-size: 18px;
+  font-weight: 600 ;
+  color: #656565;
+  margin-bottom: 30px
+}
+.key_ins_indicators  .view_body .indicators_cont + .indicators_cont  {
+  margin-top: 60px;
+}
+.key_ins_indicators  .view_body .gray_box {
+    border: 1px solid #dbdbdb;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.key_ins_indicators .label {
+  font-size: 22px;
+  font-weight: 700;
+}
 
-
-
-
-
+.key_ins_indicators .file_btn {
+  display: flex;
+  align-items: center;
+  font-size: ;
+  font-weight: 700;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  line-height: 38px;
+  padding: 0 20px;
+  margin-left: 20px;
+}
+.key_ins_indicators .file_btn i {
+  display: block;
+  width: 14px ; height: 16px;
+  background: no-repeat center;
+  background-image: url(../img/ico/file_down_ico.png);
+  margin-left: 10px;
+}
 
 
 
@@ -412,6 +457,78 @@ i.bk_ico {
   border-radius: 4px;
   font-size: 18px; font-weight: 700;
 }
+.insurance_statistics_sect .card_list {
+  --mg-x: 10px;
+  --mg-t: 20px;
+}
+.insurance_statistics_sect .card_list li a {
+  position: relative;
+  height: 100%;
+}
+.insurance_statistics_sect .card_list  li a >.badge {
+  position: absolute;
+  top:10px; left: 10px;
+  z-index: 990;
+}
+.insurance_statistics_sect .card_list  .cover-img {
+  width: 100%;
+  padding-top: 79%;
+  border-radius: 20px 20px 0 0;
+}
+.insurance_statistics_sect .card_list  .text_box {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column
+}
+.insurance_statistics_sect  .card_list  .text_box .subject {
+  min-height: 2.6em;
+}
+.insurance_statistics_sect  .card_list  .text_box .sub_subjest {
+  color: #818181;
+  font-weight: 600;
+}
+
+.insurance_statistics_sect .card_list  .text_box .text_bot {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.insurance_statistics_sect .card_list  .text_box .sub_subjest + .text_bot {
+  margin-top: 10px;
+}
+.insurance_statistics_sect .card_list .text_box .number {
+  font-weight: 800;
+  font-size: 34px;
+  text-align: center;
+  display: block;
+  color: #ff6974;
+}
+.insurance_statistics_sect .card_list .badge.sm span {
+  color: #252525;
+}
+.insurance_statistics_sect .card_list .year {
+  color: #a4a4a4;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* dictionary_filter  */
 .dictionary_filter .search_form {

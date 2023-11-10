@@ -149,6 +149,7 @@ figure + .text_box{
     height: 1.9286rem;
     line-height: 1.9286rem;
     padding: 0 .7143rem;
+    font-size: .9286rem;
 }
 .main_content .badge.sm span{
     height: 1.5rem;
@@ -204,10 +205,19 @@ figure + .text_box{
   .main_content section.insurance_statistics_sect{
     padding-top: 6.7857rem;
   }
-  .insurance_statistics_sect .card_list li a{
+  /* .insurance_statistics_sect .card_list li a{
       padding: 1.0714rem;
   }
-  
+   */
+   .insurance_statistics_sect .card_list .text_box {
+    padding: 0 1.0714rem 1.0714rem;
+  }
+  .insurance_statistics_sect .card_list .text_box .subject {
+    word-break: break-all;
+  }
+  .insurance_statistics_sect .card_list .text_box .number {
+    font-size: 1.9286rem;
+  }
   .insurance_statistics_sect .card_list .badge {
     margin-bottom: .3571rem;
   }

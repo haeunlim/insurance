@@ -259,12 +259,14 @@ figure + .text_box {
   text-align: center;
   display: block;
 }
+
 .card_list a{
     display: block;
+    height: 100%;
 }
 .card_list > li,
 .card_list > div {
-  border-radius: 16px;
+  border-radius:20px;
   background-color: #fff;
 }
 .card_list.border > li,
@@ -276,37 +278,48 @@ figure + .text_box {
   overflow: hidden;
 }
 /*badge 공통*/
-.main_content .badge span {
+
+.badge span {
   display: inline-block;
-  border-radius: 16px;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 15px;
+  border-radius: 50px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 12px;
   background-color: #f1f1f1;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-size: 14px;
+  color: #fff;
 }
-.main_content .badge.sm span {
+
+.badge.sm span {
   height: 23px;
   line-height: 23px;
-  padding: 0 8px;
+  padding: 0 15px;
   border-radius: 11.5px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
-.main_content .badge.green span {
-  background-color: var(--bs-bg-green);
+
+.badge.green span {
+  background-color: #7dad81;
 }
-.main_content .badge.purple span {
-  background-color: var(--bs-bg-purple);
+.badge.deep-green span {
+  background-color: #649d92;
 }
-.main_content .badge.blue span {
-  background-color: var(--bs-bg-blue);
+.badge.purple span {
+  background-color: #b994bf;
 }
-.main_content .badge.pink span {
-  background-color: var(--bs-bg-pink);
+
+.badge.blue span {
+  background-color: #569fb0;
 }
-.main_content .badge.yellow span {
-  background-color: var(--bs-bg-yellow);
+
+.badge.pink span {
+  background-color:#be8f9a;
+}
+
+.badge.sky span {
+  background-color:#7296d0;
 }
 
 
@@ -316,6 +329,7 @@ figure + .text_box {
 .main_top_content {
   padding-bottom: 90px;
 }
+.insurance_statistics_sect .col-4,
 .main_top_content .col-4 {
   --mg-x: 10px;
   --mg-t: 0;
@@ -324,15 +338,19 @@ figure + .text_box {
   --mg-x: 12px;
   --mg-t: 0;
 }
-
+.main_top_content .thumb_list > li img,
+.main_top_content .thumb_list > div img ,
 .main_top_content .card_list > li img,
 .main_top_content .card_list > div img {
   transition: all 0.5s;
 }
+.main_top_content .thumb_list > li:hover img,
+.main_top_content .thumb_list > div:hover img ,
 .main_top_content .card_list > li:hover img,
 .main_top_content .card_list > div:hover img {
-  transform: scale(110%);
+  transform: translate(-50%,-50%) scale(110%);
 }
+
 /* 인기정보 서비스, 알아두면 쓸모 있는 자동차보험 정보 공통 */
 .slider_wrap {
   position: relative;
@@ -368,7 +386,7 @@ figure + .text_box {
 
 /* 보헙통계 */
 
-.insurance_statistics_sect .card_list li a{
+/* .insurance_statistics_sect .card_list li a{
     padding: 20px;
     display: block;
     height: 100%;
@@ -383,7 +401,9 @@ figure + .text_box {
   }
 .insurance_statistics_sect .card_list figure {
   border-radius: 6px;
-}
+} */
+
+
 
 /* 인깆겅보 서비스  */
 .insurance_statistics_sect .supplementary_card .ico.ico01 {
