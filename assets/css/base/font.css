@@ -99,6 +99,21 @@
   font-weight: 800;
   src: url(../../fonts/NanumSquareEB.woff) format("woff");
 }
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-weight: 400;
+  src: url(../../fonts/NanumMyeongjo-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-weight: 700;
+  src: url(../../fonts/NanumMyeongjo-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-weight: 800;
+  src: url(../../fonts/NanumMyeongjo-Regular.ttf) format("ttf");
+}
 /* @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css'); */
 
 /* 지마켓 */

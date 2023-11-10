@@ -252,6 +252,27 @@
   width: 50%;
 }
 
+
+[class*="flex"].w-auto-list {
+  flex-wrap: wrap;
+  width: -webkit-calc(100% + (var(--mg-x) * 2));
+  /* for Chrome, Safari */
+  width: -moz-calc(100% + (var(--mg-x) * 2));
+  /* for Firefox */
+  width: calc(100% + var(--mg-x) * 2);
+  /* for IE */
+  margin-left: -webkit-calc(-1 * var(--mg-x));
+  margin-left: -moz-calc(-1 * var(--mg-x));
+  margin-left: calc(-1 * var(--mg-x));
+  margin-top: -webkit-calc(-1 * var(--mg-t));
+  margin-top: -moz-calc(-1 * var(--mg-t));
+  margin-top: calc(-1 * var(--mg-t));
+}
+[class*="flex"].w-auto-list > * {
+  margin: var(--mg-t) var(--mg-x) 0;
+}
+
+
 [class*="flex"].side-by-side > * {
   margin-top: 0;
 }
@@ -770,15 +791,15 @@ input[type=tel]:focus {
 }
 
 .btn-light {
-  background-color: #dbdbdb;
-  border-color: #dbdbdb;
-  color: #fff;
+  background-color: #eee !important;
+  border-color: #eee !important;
+  color: #656565 !important;
 }
 
 .btn-gray {
-  background-color: #999999;
-  border-color: #999999;
-  color: #fff;
+  background-color: #999999 !important;
+  border-color: #999999 !important;
+  color: #fff !important;
 }
 
 .btn-gray2 {

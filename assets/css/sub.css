@@ -1683,6 +1683,12 @@ i.bk_ico {
   padding-right: 16px;
   background: no-repeat center right;
 }
+.arrow_text.left span {
+  padding-right: 0;
+  padding-left: 16px;
+  background: no-repeat center left;
+}
+
 .arrow_text.white span {
   background-image: url(../img/common/ico_arrow_white.png);
 }
@@ -1694,6 +1700,20 @@ i.bk_ico {
 }
 .arrow_text.green span {
   background-image: url(../img/common/ico_arrow_green.png);
+}
+
+
+.arrow_text.left.white span {
+  background-image: url(../img/common/ico_arrow_left_white.png);
+}
+.arrow_text.left.black2 span {
+  background-image: url(../img/common/ico_arrow_left_black2.png);
+}
+.arrow_text.left.gray span {
+  background-image: url(../img/common/ico_arrow_left_gray.png);
+}
+.arrow_text.left.green span {
+  background-image: url(../img/common/ico_arrow_left_green.png);
 }
 
 .Information_page{
@@ -1854,26 +1874,149 @@ i.bk_ico {
   border-bottom: 1px solid #dbdbdb;
 }
 
+.disease_prediction_sect.card{
+  border-radius: 14px;
+  border: 1px solid #d1d1d1;
+  padding: 90px 60px 50px 80px ;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.06);
+}
+
+.disease_prediction_sect.card .btn_wrap{
+  margin-top: 0;
+}
+
+.mx-240{
+  max-width: 240px;
+}
+
+.ttl_top_text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #656565;
+  margin-bottom: 20px;
+}
 
 
+.sub_text_box .NanumMyeongjo{
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-family: 'NanumMyeongjo';
+}
+.sub_text_box .text_sm{
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 1.5714;
+}
+.chk_square{
+  --mg-x: 10px;
+--mg-t: 20px;  
+}
+.radiobox_wrap_type2 {
+  --mg-x: 15px;
+  --mg-t: 0
 
+}
 
+.prediction_form_sect .input-group{
+  --mg-x: 20px;
+  --mg-t: 40px;
+}
 
+.prediction_form_sect .input-group+.input-group{
+  border-top: 1px solid #dbdbdb;
+  
+}
+.prediction_form_sect .input-group+.input-group .input-wrap:nth-of-type(-n + 2){
+  margin-top: 60px;
+}
+.prediction_form_sect .form_text{
+  width: 100% !important;
+  margin-top: 30px !important;
+}
 
+.prediction_form_sect .input-row .bs-radio,
+.prediction_form_sect .input-row{
+  display: flex;
+  align-items: center;
+  min-height: 52px; 
+}
 
+.prediction_form_sect .btn_wrap{
+  margin-top: 80px;
+  width: 100%;
+}
+.prediction_form_sect .btn_wrap > *+*{
+  margin-left: 20px;
+}
+.prediction_form_sect .radiobox_wrap > div + div{
+  margin-left: 30px;
+}
+.form_ttl_box{
+  text-align: center;
+  margin-bottom: 40px;
 
+}
+.form_ttl{
+  font-size: 24px;
+  font-weight: 800;
+}
+.form_ttl_bot_text{
+  color: #656565;
+  margin-top: 20px;
+}
+.step_wrap{
+  margin-bottom: 60px;
+}
+.step_wrap li {
+  color: #656565;
+}
+.step_wrap li p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 15px;
 
+}
+.step_wrap li.active {
+  color: var(--bs-point);
 
+}
+.step_wrap li.active .ico{
+  box-shadow: 0 7px 13px rgba(33, 93, 171, 0.20);
+  background-color: var(--bs-point);
+  
+}
+.step_wrap li.active .ico img{
+  filter: brightness(100);
+}
+.step_wrap .ico{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  position: relative;
+  
+}
+.step_wrap .ico::after{
 
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-2px);
+  width: 26px;
+  height: 2px ;
+  background-color: #f1f1f1;
+}
+.step_wrap li:nth-of-type(1) .ico::after{
+  display: none;
+}
 
-
-
-
-
-
-
-
-
+.step_wrap li+li{
+  margin-left: 60px;
+  position: relative;
+}
 
 
 
