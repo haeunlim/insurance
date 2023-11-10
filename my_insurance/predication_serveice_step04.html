@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta
+      property="og:description"
+      content="보험개발원 보험정보 빅데이터 플랫폼"
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:image" content="img/kakaotalk_img.png" /> -->
+    <meta property="og:url" content="" />
+
+    <meta name="Title" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta name="Keywords" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta name="Description" content="보험개발원 보험정보 빅데이터 플랫폼" />
+
+    <script type="text/javascript" src="../assets/js/common.js"></script>
+
+    <title>보험개발원 보험정보 빅데이터 플랫폼</title>
+
+    <script>
+      $(function () {
+        //  기본 include
+        commonSet.getSkipNav();
+        commonSet.getHeader();
+        commonSet.getFooter();
+
+        //  탭 가져오기
+        commonSet.getDep3();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- container -->
+      <main id="container">
+        <!-- sub_visual -->
+        <section class="sub_visual my_insurance">
+          <div class="inner">
+            <h2 class="sub_visual_ttl">건강정보에 따른 주요 질환 예측 정보</h2>
+            <em class="menu_ttl">메뉴설명</em>
+
+            <nav aria-label="현위치 안내" class="breadcrumb">
+              <ol>
+                <li><span class="home"></span></li>
+                <li><span>보험통계</span></li>
+                <li aria-current="page">
+                  <span>건강정보에 따른 주요 질환 예측 정보</span>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </section>
+        <!-- //sub_visual -->
+
+        <div class="inner_1120 content">
+          <section class="prediction_form_sect">
+            <!-- 차량등급조회  -->
+            <div class="step_wrap">
+              <ul class="flex-c-c">
+                <li class="step01 ">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step01_ico.png"
+                      alt="step01 입력정보"
+                    />
+                  </div>
+                  <p>step 01</p>
+                </li>
+                <li class="step02 ">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step02_ico.png"
+                      alt="step02 입력정보"
+                    />
+                  </div>
+                  <p>step 02</p>
+                </li>
+                <li class="step03">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step03_ico.png"
+                      alt="step03 입력정보"
+                    />
+                  </div>
+                  <p>step 03</p>
+                </li>
+                <li class="step04 active">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step04_ico.png"
+                      alt="결과보기"
+                    />
+                  </div>
+                  <p>결과보기</p>
+                </li>
+              </ul>
+            </div>
+            <div class="form_ttl_box">
+              <h2 class="form_ttl">질환 예측 결과서
+            </h2>
+              <p class="form_ttl_bot_text tac"><span class="text-dark">‘박시윤’</span> 님의 건강 예측 결과입니다.
+            </p>
+            </div>
+            <form action="">
+              <div class="flex col-3">
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_01"
+                          value="간암"
+                          checked
+                        />
+                        <label for="medical_history_01">간암</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_02"
+                          value="고지혈증"
+                        />
+                        <label for="medical_history_02">고지혈증</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_03"
+                          value="고혈압"
+                        />
+                        <label for="medical_history_03">고혈압</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_04"
+                          value="골절"
+                        />
+                        <label for="medical_history_04">골절</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_05"
+                          value="뇌졸증"
+                        />
+                        <label for="medical_history_05">뇌졸증</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_06"
+                          value="대장암"
+                        />
+                        <label for="medical_history_06">대장암</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_07"
+                          value="류마티스"
+                        />
+                        <label for="medical_history_07">류마티스 관절염</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_08"
+                          value="만성신장병"
+                        />
+                        <label for="medical_history_08">만성신장병</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_09"
+                          value="만성폐쇄성폐질환"
+                        />
+                        <label for="medical_history_09">만성폐쇄성폐질환</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_10"
+                          value="심근경색"
+                        />
+                        <label for="medical_history_10">심근경색</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_11"
+                          value="심방세동"
+                        />
+                        <label for="medical_history_11">심방세동</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_12"
+                          value="심부전"
+                        />
+                        <label for="medical_history_12">심부전</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_13"
+                          value="우울증"
+                        />
+                        <label for="medical_history_13">우울증</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_14"
+                          value="위암"
+                        />
+                        <label for="medical_history_14">위암</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_15"
+                          value="유방암"
+                        />
+                        <label for="medical_history_15">유방암</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_16"
+                          value="제2형"
+                        />
+                        <label for="medical_history_16">제2형 당뇨병</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_17"
+                          value="천식"
+                        />
+                        <label for="medical_history_17">천식</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_18"
+                          value="치매"
+                        />
+                        <label for="medical_history_18">치매</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_19"
+                          value="폐렴"
+                        />
+                        <label for="medical_history_19">폐렴</label>
+                      </div>
+                      <div class="chk_square">
+                        <input
+                          type="checkbox"
+                          name="medical_history"
+                          id="medical_history_20"
+                          value="폐암"
+                        />
+                        <label for="medical_history_20">폐암</label>
+                      </div>
+                      </div>
+            </form>
+            <div class="btn_wrap flex-c-c">
+              <button type="button" onClick="history.back(-1)" class="btn btn-light mx-240 arrow_text left gray"><span>이전</span></button>
+              <button type="button" onclick="location.href='predication_serveice_step04.html'" class="btn btn-point arrow_text white mx-240"><span>다음</span></button>
+          </div>
+          </section>
+        </div>
+      </main>
+      <!-- // container  -->
+    </div>
+
+    <script>
+      const nowBreadcrum = document.querySelector(
+        '.breadcrumb li[aria-current="page"] span'
+      );
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => {
+            t.classList.remove("on");
+            t.setAttribute("aria-selected", "false");
+          });
+          tab.classList.add("on");
+          tab.setAttribute("aria-selected", "true");
+
+          tabContents.forEach((content) => {
+            content.classList.remove("active");
+          });
+
+          const tabId = tab.getAttribute("id").replace("tab", "");
+          const targetTab = document.getElementById("tabpanel" + tabId);
+          targetTab.classList.add("active");
+
+          const activeTabText = tab.innerText;
+          nowBreadcrum.innerText = activeTabText;
+
+          // console.log("현위치: " + activeTabText);
+        });
+      });
+
+      function gradeSearchView() {
+        $(".car_search_view").slideDown();
+      }
+    </script>
+  </body>
+</html>

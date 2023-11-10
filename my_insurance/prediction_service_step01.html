@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta
+      property="og:description"
+      content="보험개발원 보험정보 빅데이터 플랫폼"
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:image" content="img/kakaotalk_img.png" /> -->
+    <meta property="og:url" content="" />
+
+    <meta name="Title" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta name="Keywords" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta name="Description" content="보험개발원 보험정보 빅데이터 플랫폼" />
+
+    <script type="text/javascript" src="../assets/js/common.js"></script>
+
+    <title>보험개발원 보험정보 빅데이터 플랫폼</title>
+
+    <script>
+      $(function () {
+        //  기본 include
+        commonSet.getSkipNav();
+        commonSet.getHeader();
+        commonSet.getFooter();
+
+        //  탭 가져오기
+        commonSet.getDep3();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- container -->
+      <main id="container">
+        <!-- sub_visual -->
+        <section class="sub_visual my_insurance">
+          <div class="inner">
+            <h2 class="sub_visual_ttl">건강정보에 따른 주요 질환 예측 정보</h2>
+            <em class="menu_ttl">메뉴설명</em>
+
+            <nav aria-label="현위치 안내" class="breadcrumb">
+              <ol>
+                <li><span class="home"></span></li>
+                <li><span>보험통계</span></li>
+                <li aria-current="page">
+                  <span>건강정보에 따른 주요 질환 예측 정보</span>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </section>
+        <!-- //sub_visual -->
+
+        <div class="inner_1120 content">
+          <section class="tab_board prediction_form_sect">
+            <!-- 차량등급조회  -->
+            <div class="step_wrap">
+              <ul class="flex-c-c">
+                <li class="step01 active">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step01_ico.png"
+                      alt="step01 입력정보"
+                    />
+                  </div>
+                  <p>step 01</p>
+                </li>
+                <li class="step02">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step02_ico.png"
+                      alt="step02 입력정보"
+                    />
+                  </div>
+                  <p>step 02</p>
+                </li>
+                <li class="step03">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step03_ico.png"
+                      alt="step03 입력정보"
+                    />
+                  </div>
+                  <p>step 03</p>
+                </li>
+                <li class="step04">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step04_ico.png"
+                      alt="결과보기"
+                    />
+                  </div>
+                  <p>결과보기</p>
+                </li>
+              </ul>
+            </div>
+            <div class="form_ttl_box">
+                <h2 class="form_ttl">기본정보 입력</h2>
+            </div>
+            <form action="">
+              <div class="input-group flex col-2">
+                <div class="input-wrap">
+                  <label for="user_name">이름</label>
+                  <div class="input-row">
+                    <input
+                      type="text"
+                      class="bs-input"
+                      id="user_name"
+                      title="이름 입력"
+                    />
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">성별</label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="gender"
+                          id="man"
+                          value="남"
+                          checked
+                        />
+                        <label for="man">남</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="gender"
+                          id="woman"
+                          value="여"
+                        />
+                        <label for="woman">여</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="age">나이</label>
+                  <div class="input-row">
+                    <select name="age" id="age" class="bs-select">
+                      <option value="">선택하세요</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="stature">키</label>
+                  <div class="input-row">
+                    <select name="stature" id="stature" class="bs-select">
+                      <option value="">선택하세요</option>
+                      <option value="140">140</option>
+                      <option value="141">141</option>
+                      <option value="142">142</option>
+                      <option value="143">143</option>
+                      <option value="144">144</option>
+                      <option value="145">145</option>
+                      <option value="146">146</option>
+                      <option value="147">147</option>
+                      <option value="148">148</option>
+                      <option value="149">149</option>
+                      <option value="150">150</option>
+                      <option value="151">151</option>
+                      <option value="152">152</option>
+                      <option value="153">153</option>
+                      <option value="154">154</option>
+                      <option value="155">155</option>
+                      <option value="156">156</option>
+                      <option value="157">157</option>
+                      <option value="158">158</option>
+                      <option value="159">159</option>
+                      <option value="160">160</option>
+                      <option value="161">161</option>
+                      <option value="162">162</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="stature">몸무게</label>
+                  <div class="input-row">
+                    <select name="stature" id="stature" class="bs-select">
+                      <option value="">선택하세요</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="stature">허리둘레</label>
+                  <div class="input-row">
+                    <select name="stature" id="stature" class="bs-select">
+                      <option value="">선택하세요</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="stature">흡연여부</label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="smoking"
+                          id="smoking_y"
+                          value="흡연"
+                          checked
+                        />
+                        <label for="smoking_y">흡연</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="smoking"
+                          id="smoking_n"
+                          value="비흡연"
+                        />
+                        <label for="smoking_n">비흡연</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                    <label for="stature">음주여부</label>
+                    <div class="input-row">
+                      <div class="radiobox_wrap" role="radiogroup">
+                        <div class="bs-radio">
+                          <input
+                            type="radio"
+                            name="drinking"
+                            id="drinking_n"
+                            value="마시지 않음"
+                            checked
+                          />
+                          <label for="drinking_n">마시지 않음</label>
+                        </div>
+                        <div class="bs-radio">
+                          <input
+                            type="radio"
+                            name="drinking"
+                            id="drinking_n2"
+                            value="거의 마시지 않음"
+                          />
+                          <label for="drinking_n2">거의 마시지 않음</label>
+                        </div>
+                        <div class="bs-radio">
+                            <input
+                              type="radio"
+                              name="drinking"
+                              id="drinking_y"
+                              value="월2회 이상 마심"
+                              checked
+                            />
+                            <label for="drinking_y">월2회 이상 마심</label>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="input-group flex col-2">
+                <p class="form_text text-gray">
+                    ※“모름”을 선택하시는 경우 기본값(평균)으로 자동 처리됩니다.
+    
+                </p>
+                <div class="input-wrap">
+                  <label for="user_name">총 콜레스테롤  
+                </label>
+                  <div class="input-row">
+                    <select name="stature" id="stature" class="bs-select">
+                        <option value="">선택하세요</option>
+                  
+                      </select>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                    <label for="user_name">(혈청지오티)AST
+
+                  </label>
+                    <div class="input-row">
+                      <select name="stature" id="stature" class="bs-select">
+                          <option value="">선택하세요</option>
+                    
+                        </select>
+                    </div>
+                  </div>
+                <div class="input-wrap">
+                  <label for="user_name">(혈청지피티)ALT
+  
+                </label>
+                  <div class="input-row">
+                    <select name="stature" id="stature" class="bs-select">
+                        <option value="">선택하세요</option>
+                  
+                      </select>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                    <label for="user_name">혈색소
+  
+                  </label>
+                    <div class="input-row">
+                      <select name="stature" id="stature" class="bs-select">
+                          <option value="">선택하세요</option>
+                    
+                        </select>
+                    </div>
+                  </div>
+                <div class="input-wrap">
+                  <label for="user_name">감마지티피
+  
+                </label>
+                  <div class="input-row">
+                    <select name="stature" id="stature" class="bs-select">
+                        <option value="">선택하세요</option>
+                  
+                      </select>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                    <label for="user_name">이완기 혈압
+  
+                  </label>
+                    <div class="input-row">
+                      <select name="stature" id="stature" class="bs-select">
+                          <option value="">선택하세요</option>
+                    
+                        </select>
+                    </div>
+                  </div>
+                <div class="input-wrap">
+                  <label for="user_name">수축기 혈압
+  
+                </label>
+                  <div class="input-row">
+                    <select name="stature" id="stature" class="bs-select">
+                        <option value="">선택하세요</option>
+                  
+                      </select>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                    <label for="user_name">체질량 지수
+  
+                  </label>
+                    <div class="input-row">
+                      <select name="stature" id="stature" class="bs-select">
+                          <option value="">선택하세요</option>
+                    
+                        </select>
+                    </div>
+                  </div>
+                  <div class="input-wrap">
+                    <label for="user_name">식전혈당(공복혈당)  
+                  </label>
+                    <div class="input-row">
+                      <select name="stature" id="stature" class="bs-select">
+                          <option value="">선택하세요</option>
+                    
+                        </select>
+                    </div>
+                  </div>
+                  
+              </div>
+            </form>
+            <div class="btn_wrap flex-c-c">
+              <button
+                type="button"
+                onclick="location.href='predication_serveice_step02.html'"
+                class="btn btn-light mx-240 arrow_text gray"
+              >
+                <span>다음</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- // container  -->
+    </div>
+
+    <script>
+      const nowBreadcrum = document.querySelector(
+        '.breadcrumb li[aria-current="page"] span'
+      );
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => {
+            t.classList.remove("on");
+            t.setAttribute("aria-selected", "false");
+          });
+          tab.classList.add("on");
+          tab.setAttribute("aria-selected", "true");
+
+          tabContents.forEach((content) => {
+            content.classList.remove("active");
+          });
+
+          const tabId = tab.getAttribute("id").replace("tab", "");
+          const targetTab = document.getElementById("tabpanel" + tabId);
+          targetTab.classList.add("active");
+
+          const activeTabText = tab.innerText;
+          nowBreadcrum.innerText = activeTabText;
+
+          // console.log("현위치: " + activeTabText);
+        });
+      });
+
+      function gradeSearchView() {
+        $(".car_search_view").slideDown();
+      }
+    </script>
+  </body>
+</html>

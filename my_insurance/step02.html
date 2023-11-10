@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="보험개발원 보험정보 빅데이터 플랫폼" />
+  <meta property="og:description" content="보험개발원 보험정보 빅데이터 플랫폼" />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:image" content="img/kakaotalk_img.png" /> -->
+  <meta property="og:url" content="" />
+
+  <meta name="Title" content="보험개발원 보험정보 빅데이터 플랫폼" />
+  <meta name="Keywords" content="보험개발원 보험정보 빅데이터 플랫폼" />
+  <meta name="Description" content="보험개발원 보험정보 빅데이터 플랫폼" />
+
+
+  <script type="text/javascript" src="../assets/js/common.js"></script>
+
+  <title>보험개발원 보험정보 빅데이터 플랫폼</title>
+
+  <script>
+    $(function() {
+      //  기본 include
+      commonSet.getSkipNav();
+      commonSet.getHeader();
+      commonSet.getFooter();
+
+      //  탭 가져오기
+      commonSet.getDep3();
+    
+    });
+  </script>
+
+</head>
+<body>
+
+  <div id="wrap">
+
+    <!-- container -->
+    <main id="container" >
+
+      <!-- sub_visual -->
+      <section class="sub_visual my_insurance">
+        <div class="inner">
+            <h2 class="sub_visual_ttl">건강정보에 따른 주요 질환 예측 정보</h2>
+            <em class="menu_ttl">메뉴설명</em>
+  
+            <nav aria-label="현위치 안내" class="breadcrumb">
+              <ol>
+                <li><span class="home"></span></li>
+                <li><span>보험통계</span> </li>
+                <li aria-current="page"><span>건강정보에 따른 주요 질환 예측 정보</span></li>
+              </ol>
+            </nav>
+          </div>
+      </section>
+      <!-- //sub_visual -->
+
+      <div class="inner_1120 content"> 
+        <section class="tab_board prediction_form_sect">
+                <figure>
+                    <img src="../assets/img/sub/form02.png" alt="">
+                </figure>
+                <div class="btn_wrap flex-c-c">
+                    <button type="button" onClick="location.href='step03.html'" class="mx-240 btn btn-light arrow_text gray"><span>다음</span></button>
+                </div> 
+        </section>
+
+     
+        
+      </div>
+    </main>
+    <!-- // container  -->
+
+  </div>
+
+  <script>
+
+    
+    const nowBreadcrum = document.querySelector('.breadcrumb li[aria-current="page"] span');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => {
+                t.classList.remove('on');
+                t.setAttribute('aria-selected', 'false');
+            });
+            tab.classList.add('on');
+            tab.setAttribute('aria-selected', 'true');
+
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            const tabId = tab.getAttribute('id').replace('tab', '');
+            const targetTab = document.getElementById('tabpanel' + tabId);
+            targetTab.classList.add('active');
+
+            const activeTabText = tab.innerText;
+            nowBreadcrum.innerText = activeTabText
+            
+            // console.log("현위치: " + activeTabText);
+        });
+    });
+
+    function gradeSearchView () {
+      $('.car_search_view').slideDown()
+    }
+
+</script>
+  
+</body>
+
+
+</html>

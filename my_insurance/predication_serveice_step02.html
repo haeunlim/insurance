@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta
+      property="og:description"
+      content="보험개발원 보험정보 빅데이터 플랫폼"
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:image" content="img/kakaotalk_img.png" /> -->
+    <meta property="og:url" content="" />
+
+    <meta name="Title" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta name="Keywords" content="보험개발원 보험정보 빅데이터 플랫폼" />
+    <meta name="Description" content="보험개발원 보험정보 빅데이터 플랫폼" />
+
+    <script type="text/javascript" src="../assets/js/common.js"></script>
+
+    <title>보험개발원 보험정보 빅데이터 플랫폼</title>
+
+    <script>
+      $(function () {
+        //  기본 include
+        commonSet.getSkipNav();
+        commonSet.getHeader();
+        commonSet.getFooter();
+
+        //  탭 가져오기
+        commonSet.getDep3();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- container -->
+      <main id="container">
+        <!-- sub_visual -->
+        <section class="sub_visual my_insurance">
+          <div class="inner">
+            <h2 class="sub_visual_ttl">건강정보에 따른 주요 질환 예측 정보</h2>
+            <em class="menu_ttl">메뉴설명</em>
+
+            <nav aria-label="현위치 안내" class="breadcrumb">
+              <ol>
+                <li><span class="home"></span></li>
+                <li><span>보험통계</span></li>
+                <li aria-current="page">
+                  <span>건강정보에 따른 주요 질환 예측 정보</span>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </section>
+        <!-- //sub_visual -->
+
+        <div class="inner_1120 content">
+          <section class="tab_board prediction_form_sect">
+            <!-- 차량등급조회  -->
+            <div class="step_wrap">
+              <ul class="flex-c-c">
+                <li class="step01 ">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step01_ico.png"
+                      alt="step01 입력정보"
+                    />
+                  </div>
+                  <p>step 01</p>
+                </li>
+                <li class="step02 active">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step02_ico.png"
+                      alt="step02 입력정보"
+                    />
+                  </div>
+                  <p>step 02</p>
+                </li>
+                <li class="step03">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step03_ico.png"
+                      alt="step03 입력정보"
+                    />
+                  </div>
+                  <p>step 03</p>
+                </li>
+                <li class="step04">
+                  <div class="ico">
+                    <img
+                      src="../assets/img/sub/step04_ico.png"
+                      alt="결과보기"
+                    />
+                  </div>
+                  <p>결과보기</p>
+                </li>
+              </ul>
+            </div>
+            <div class="form_ttl_box">
+              <h2 class="form_ttl">추가정보 선택</h2>
+              <p class="form_ttl_bot_text tac">※ 가족력 관련한 정보를 선택해 주세요 </p>
+            </div>
+            <form action="">
+              <div class="input-group flex col-3">
+                <div class="input-wrap">
+                  <label for="user_name">뇌졸중 유무
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="stroke"
+                          id="stroke_y"
+                          value="있다"
+                          checked
+                        />
+                        <label for="stroke_y">있다</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="stroke"
+                          id="stroke_n"
+                          value="없다"
+                        />
+                        <label for="stroke_n">없다</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">암 유무
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="cancer"
+                          id="cancer_y"
+                          value="있다"
+                          checked
+                        />
+                        <label for="cancer_y">있다</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="cancer"
+                          id="cancer_n"
+                          value="없다"
+                        />
+                        <label for="cancer_n">없다</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">당뇨병 유무
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="diabetes"
+                          id="diabetes_y"
+                          value="있다"
+                          checked
+                        />
+                        <label for="diabetes_y">있다</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="diabetes"
+                          id="diabetes_n"
+                          value="없다"
+                        />
+                        <label for="diabetes_n">없다</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">심장병 유무
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="heart_disease"
+                          id="heart_disease_y"
+                          value="있다"
+                          checked
+                        />
+                        <label for="heart_disease_y">있다</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="heart_disease"
+                          id="heart_disease_n"
+                          value="없다"
+                        />
+                        <label for="heart_disease_n">없다</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">고혈압 유무
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="high_blood_pressure"
+                          id="high_blood_pressure_y"
+                          value="있다"
+                          checked
+                        />
+                        <label for="high_blood_pressure_y">있다</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="high_blood_pressure"
+                          id="high_blood_pressure_n"
+                          value="없다"
+                        />
+                        <label for="high_blood_pressure_n">없다</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">간장질환 유무
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="liver_disease"
+                          id="liver_disease_y"
+                          value="있다"
+                          checked
+                        />
+                        <label for="liver_disease_y">있다</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="liver_disease"
+                          id="liver_disease_n"
+                          value="없다"
+                        />
+                        <label for="liver_disease_n">없다</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+            
+              </div>
+              <div class="input-group flex col-2">
+                <p class="form_text text-gray">
+                    ※“모름”을 선택하시는 경우 기본값(평균)으로 자동 처리됩니다.
+                </p>
+                <div class="input-wrap">
+                  <label for="user_name">장애여부
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="disability"
+                          id="disability_n"
+                          value="정상"
+                          checked
+                        />
+                        <label for="disability_n">정상</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="disability"
+                          id="disability_1_2"
+                          value="중증(1~2등급)"
+                        />
+                        <label for="disability_1_2">중증(1~2등급)
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="disability"
+                          id="disability_3_6"
+                          value="경증(3~6등급)"
+                        />
+                        <label for="disability_3_6">경증(3~6등급)
+
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">운동여부
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="exercise"
+                          id="exercise_n"
+                          value="안한다"
+                          checked
+                        />
+                        <label for="exercise_n">안한다
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="exercise"
+                          id="exercise_1_2"
+                          value="주 1~2회"
+                        />
+                        <label for="exercise_1_2">주 1~2회
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="exercise"
+                          id="exercise_3_4"
+                          value="주 3~4회"
+                        />
+                        <label for="exercise_3_4">주 3~4회
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="exercise"
+                          id="exercise_5_6"
+                          value="주 5~6회"
+                        />
+                        <label for="exercise_5_6">주 5~6회
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">요당
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urine_glucose"
+                          id="urine_glucose_d_n"
+                          value="모름"
+                          checked
+                        />
+                        <label for="urine_glucose_d_n">모름</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urine_glucose"
+                          id="urine_glucose_n"
+                          value="음성"
+                        />
+                        <label for="urine_glucose_n">음성</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urine_glucose"
+                          id="urine_glucose_y"
+                          value="약약성(±)"
+                          checked
+                        />
+                        <label for="urine_glucose_y">약약성(±)
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urine_glucose"
+                          id="urine_glucose_y_1"
+                          value="양성(＋1 )"
+                        />
+                        <label for="urine_glucose_y_1">양성(＋1 )
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">요잠혈
+
+                </label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urinary_occult_blood"
+                          id="urinary_occult_blood_d_n"
+                          value="모름"
+                          checked
+                        />
+                        <label for="urinary_occult_blood_d_n">모름</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urinary_occult_blood"
+                          id="urinary_occult_blood_n"
+                          value="음성"
+                        />
+                        <label for="urinary_occult_blood_n">음성 
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urinary_occult_blood"
+                          id="urinary_occult_blood_l"
+                          value="약약성(±)"
+                          checked
+                        />
+                        <label for="urinary_occult_blood_l">약약성(±)
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urinary_occult_blood"
+                          id="urinary_occult_blood_y_1"
+                          value="양성(＋1 )"
+                        />
+                        <label for="urinary_occult_blood_y_1">양성(＋1 )
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urinary_occult_blood"
+                          id="urinary_occult_blood_y_2"
+                          value="양성(＋2 )"
+                          checked
+                        />
+                        <label for="urinary_occult_blood_y_2">양성(＋2 )
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urinary_occult_blood"
+                          id="urinary_occult_blood_y_3"
+                          value="양성(＋3 )"
+                        />
+                        <label for="urinary_occult_blood_y_3">양성(＋3 )
+                        </label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="urinary_occult_blood"
+                          id="urinary_occult_blood_y_4"
+                          value="양성(＋4 )"
+                        />
+                        <label for="urinary_occult_blood_y_4">양성(＋4 )
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group flex col-2">
+                <div class="input-wrap">
+                  <label for="user_name">요PH</label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="PH"
+                          id="PH_d_n"
+                          value="모름"
+                          checked
+                        />
+                        <label for="PH_d_n">모름</label>
+                      </div>
+                      <div class="bs-radio">
+                        <input
+                          type="radio"
+                          name="PH"
+                          id="PH_n"
+                          value="없다"
+                        />
+                        <label for="PH_n">없다</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <label for="user_name">요담백</label>
+                  <div class="input-row">
+                    <div class="radiobox_wrap_type2 flex w-auto-list" role="radiogroup">
+                        <div class="bs-radio">
+                            <input
+                              type="radio"
+                              name="yodambaek"
+                              id="yodambaek_d_n"
+                              value="모름"
+                              checked
+                            />
+                            <label for="yodambaek_d_n">모름</label>
+                          </div>
+                          <div class="bs-radio">
+                            <input
+                              type="radio"
+                              name="yodambaek"
+                              id="yodambaek_n"
+                              value="음성"
+                            />
+                            <label for="yodambaek_n">음성 
+                            </label>
+                          </div>
+                          <div class="bs-radio">
+                            <input
+                              type="radio"
+                              name="yodambaek"
+                              id="yodambaek_l"
+                              value="약약성(±)"
+                              checked
+                            />
+                            <label for="yodambaek_l">약약성(±)
+                            </label>
+                          </div>
+                          <div class="bs-radio">
+                            <input
+                              type="radio"
+                              name="yodambaek"
+                              id="yodambaek_y_1"
+                              value="양성(＋1 )"
+                            />
+                            <label for="yodambaek_y_1">양성(＋1 )
+                            </label>
+                          </div>
+                          <div class="bs-radio">
+                            <input
+                              type="radio"
+                              name="yodambaek"
+                              id="yodambaek_y_2"
+                              value="양성(＋2 )"
+                              checked
+                            />
+                            <label for="yodambaek_y_2">양성(＋2 )
+                            </label>
+                          </div>
+                          <div class="bs-radio">
+                            <input
+                              type="radio"
+                              name="yodambaek"
+                              id="yodambaek_y_3"
+                              value="양성(＋3 )"
+                            />
+                            <label for="yodambaek_y_3">양성(＋3 )
+                            </label>
+                          </div>
+                          <div class="bs-radio">
+                            <input
+                              type="radio"
+                              name="yodambaek"
+                              id="yodambaek_y_4"
+                              value="양성(＋4 )"
+                            />
+                            <label for="yodambaek_y_4">양성(＋4 )
+                            </label>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="btn_wrap flex-c-c">
+              <button type="button" onClick="history.back(-1)" class="btn btn-light mx-240 arrow_text left gray"><span>이전</span></button>
+              <button type="button" onclick="location.href='predication_serveice_step03.html'" class="btn btn-point arrow_text white mx-240"><span>다음</span></button>
+          </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- // container  -->
+    </div>
+
+    <script>
+      const nowBreadcrum = document.querySelector(
+        '.breadcrumb li[aria-current="page"] span'
+      );
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => {
+            t.classList.remove("on");
+            t.setAttribute("aria-selected", "false");
+          });
+          tab.classList.add("on");
+          tab.setAttribute("aria-selected", "true");
+
+          tabContents.forEach((content) => {
+            content.classList.remove("active");
+          });
+
+          const tabId = tab.getAttribute("id").replace("tab", "");
+          const targetTab = document.getElementById("tabpanel" + tabId);
+          targetTab.classList.add("active");
+
+          const activeTabText = tab.innerText;
+          nowBreadcrum.innerText = activeTabText;
+
+          // console.log("현위치: " + activeTabText);
+        });
+      });
+
+      function gradeSearchView() {
+        $(".car_search_view").slideDown();
+      }
+    </script>
+  </body>
+</html>
