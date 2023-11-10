@@ -484,7 +484,7 @@ figure + .text_box {
   padding: 40px 0 80px;
 }
 .my_key_services .card_list .img {
-  border-radius: 16px 16px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 .my_key_services .card_list .img.bg-green {
   background-color: #00ad53;
