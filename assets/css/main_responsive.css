@@ -162,21 +162,21 @@ figure + .text_box{
 .main_top_content {
     padding-bottom: 3.5714rem;
 }
-
+.main_top_content .weekly,
 .main_top_content .card_list_wrap{
     overflow-y: hidden;
     overflow-x: auto;
     width: calc(100% + 1.0714rem);
 }
-
+.main_top_content .thumb_list>li,
 .main_top_content .card_list>li,
 .main_top_content .card_list>div{
     width: 15rem;
     flex-shrink: 0;
 }
-
+.main_top_content .thumb_list,
 .main_top_content .col-3,
-  .main_top_content .col-4 {
+.main_top_content .col-4 {
     --mg-x: .5357rem;
     flex-wrap: nowrap;
   }

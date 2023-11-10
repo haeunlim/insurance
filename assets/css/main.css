@@ -550,12 +550,12 @@ figure + .text_box {
 .insurance_news_slider_btns .swiper-slide-btn,
 .insurance_news_cont .insurance_news_slider {
   display: none;
-  overflow: visible;
+  /* overflow: visible; */
 }
 
 .insurance_news_cont .card_list .swiper-slide {
   height: auto;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   border-radius: 12px;
   overflow: hidden;
   transition: background 0.3s;
@@ -571,9 +571,11 @@ figure + .text_box {
   padding: 40px 30px;
   height: 358px;
 }
+.insurance_news_cont .card_list .swiper-slide  a:focus,
 .insurance_news_cont .card_list .swiper-slide:hover {
   background: #2973d6;
 }
+.insurance_news_cont .card_list .swiper-slide  a:focus * ,
 .insurance_news_cont .card_list .swiper-slide:hover * {
   color: #fff;
 }

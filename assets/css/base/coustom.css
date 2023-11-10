@@ -1132,7 +1132,7 @@ input[type=tel]:focus {
     margin: var(--mo-mg-t) 0 0;
   }
 
-  [class*="flex"].mo_-col-2 {
+  [class*="flex"].mo-col-2 {
     flex-wrap: wrap;
     width: -webkit-calc(100% + (var(--mo-mg-x) * 2));
     /* for Chrome, Safari */

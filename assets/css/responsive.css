@@ -94,6 +94,17 @@
     padding: 20px;
   }
 
+  .monthly_group .img_text_wrap .monthly_text_box {
+    padding-left:20px;
+    padding-top: 10px;
+  }
+  .monthly_group .new_list li, .monthly_group .trend_list li {
+    padding: 15px
+  }
+
+
+
+
   
 }
 @media screen and (max-width: 970px)  {
