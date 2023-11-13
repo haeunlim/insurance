@@ -181,9 +181,111 @@
           <!-- 원가지수 산출방법 -->
           <div role="tabpanel" id="tabpanel3" class="tab_cont " aria-labelledby="tab3">
             <div class="car_cost">
+              <section class="detail_desc_sec">
+                <h3 class="square_ttl">원가지수 산출식</h3>
+                <ul class="text_list">
+                  <li>
+                    <i class="bk_ico"></i>
+                    <div class="value_box">
+                      <strong class="mid_ttl">대상년도에 발생한 원가요소의 가격변동으로 인한 보험금 항목별 가격변동을 직전년도*와 비교하여 산출합니다. </strong>
+                      <p class="text flex">
+                        <i>*</i>   원가지수 기준연도(100) : 지수대상년도의 직전년도(예 : `21년 지수의 기준연도는 `20년)
+                      </p>
+                      <p class="text flex">
+                        <i>※</i> 지수산식 : 라스파이레스 산식(Laspeyres’Formula)을 사용하며, 물가지수와 같은 종합지수에 널리 이용되는 지수 계산 방식의 하나임
+                      </p>
+                      <div class="cost_img_desc flex--c bg">
+                        <div class="img_cont_box">
+                          <picture>
+                              <source media="(max-width: 768px)" srcset="../assets/img/sub/car_cost_01_m.png">
+                              <img src="../assets/img/sub/car_cost_01.png" alt="원가지수 산출식 이미지">
+                            </picture>
+                        </div>
+                        <p class="text mt-0">L : 지수, P : 가격, Q : 수량, 0 : 기준시점, t : 비교시점</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="bk_ico"></i>
+                    <div class="value_box">
+                      <strong class="mid_ttl">항목별 지수 산출 시 반영대상은 대상년도에 해당 원가의 가격변동이 발생한 원가 요소를 대상으로 합니다.</strong>
+                      <div class="cost_img_desc ">
+                      <div class="mo_scroll time_img">
+                          <div class="img_cont_box flex-c-c ">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/img/sub/car_cost_02_m.png">
+                                <img src="../assets/img/sub/car_cost_02.png" alt="원가지수 산출식 이미지">
+                              </picture>
+                          </div>
+                      </div>
+                        <em class="sm_ttl mb-0 tac">원가요인 반영 대상기간</em>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="bk_ico"></i>
+                    <div class="value_box">
+                      <strong class="mid_ttl">보험금은 원가와 사고건수 증감 정도에 따라 증가 또는 감소할 수 있습니다. 즉, 원가지수와 사고건수 간 변동 수준(크기)의 격차에 따라 보험금 변화 방향이 다를 수 있습니다.
+                      </strong>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="bk_ico"></i>
+                    <div class="value_box">
+                      <strong class="mid_ttl mb-0"> 예시는 아래 그림과 같습니다.  </strong>
+                      <div class="cost_img_desc">
+                        <em class="sm_ttl mb-0">(예시 1) 보험금 감소 경우</em>
+                        <div class="flex col-2 mo-col-1 mo-block-100">
+                          <div class="img_cont_box">
+                            <p class="text mt-0">(예시 1 - 1 )</p>
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/img/sub/car_cost_03-1_m.png">
+                                <img src="../assets/img/sub/car_cost_03-1.png" alt="원가지수 산출식 이미지">
+                              </picture>
+                          </div>
+                          <div class="img_cont_box">
+                            <p class="text mt-0">(예시 1 - 2 )</p>
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/img/sub/car_cost_03-2_m.png">
+                                <img src="../assets/img/sub/car_cost_03-2.png" alt="원가지수 산출식 이미지">
+                              </picture>
+                          </div>
+                          <div class="img_cont_box">
+                            <p class="text mt-0">(예시 2 - 1 )</p>
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/img/sub/car_cost_04-1_m.png">
+                                <img src="../assets/img/sub/car_cost_04-1.png" alt="원가지수 산출식 이미지">
+                              </picture>
+                          </div>
+                          <div class="img_cont_box">
+                            <p class="text mt-0">(예시 2 - 2 )</p>
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/img/sub/car_cost_04-2_m.png">
+                                <img src="../assets/img/sub/car_cost_04-2.png" alt="원가지수 산출식 이미지">
+                              </picture>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cost_img_desc">
+                        <em class="sm_ttl mb-0">(예시 1-1)의 사례는 아래와 같습니다.</em>
+                        <div class="mo_scroll">
+                          <div class="img_cont_box ">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="../assets/img/sub/car_cost_05_m.png">
+                                <img src="../assets/img/sub/car_cost_05.png" alt="원가지수 산출식 이미지">
+                              </picture>
+                          </div>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </li>
+               
+                </ul>
+              </section>
+            
+            </div>
 
-
-            </div> 
           </div>
 
         

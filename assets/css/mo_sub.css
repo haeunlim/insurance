@@ -1,6 +1,7 @@
 @charset "UTF-8";  
 
 @media screen and (max-width: 768px)  {
+  .cost_img_desc .mo_scroll::-webkit-scrollbar,
   .scroll_table::-webkit-scrollbar,
   .table_wrap .mo_scroll::-webkit-scrollbar,
   .horizonScroll::-webkit-scrollbar {
@@ -9,6 +10,7 @@
     border-radius: 1.5625rem;
     background: #eee
   }
+  .cost_img_desc .mo_scroll::-webkit-scrollbar-thumb,
   .scroll_table::-webkit-scrollbar-thumb,
   .table_wrap .mo_scroll::-webkit-scrollbar-thumb,
   .horizonScroll::-webkit-scrollbar-thumb {
@@ -851,7 +853,7 @@
     padding:.9286rem;
   }
   .text_list .value_box {
-    /* width: calc(100% - 1.6071rem); */
+    width: calc(100% - 1.6071rem);
   }
   .car_price_box .table_wrap {
 
@@ -1534,12 +1536,53 @@
   .monthly_group .chart_box .monthly_more {
     justify-content: flex-start;
     margin-top: .8571rem;
+  }
+
+  .car_cost .cost_img_desc.bg {
+    border-radius: .3571rem;
+    padding: 2.1429rem 1.0714rem 1.7857rem;
+    display: block;
+  }
+  .car_cost .cost_img_desc.bg  img {
+    width: 9.0357rem;
+  }
+  .car_cost .cost_img_desc.bg p {
+    margin-left: 0;
+    margin: 1.4286rem 0  0 !important;
+  }
+
+  .car_cost .cost_img_desc .mo_scroll {
+    overflow-x: scroll;
+  }
+  .car_cost .cost_img_desc .mo_scroll .img_cont_box{
+    width: 54.2857rem;
+    display: block;
+  }
+  .car_cost .cost_img_desc .time_img .img_cont_box{
+    width: 38.5357rem;
+    padding: 2.1429rem 1.4286rem 1.4286rem;
+    margin: 0;
+  }
+  .car_cost .cost_img_desc .time_img + em {
+    margin-top: 1.0714rem;
+    display: block;
+  }
+  .car_cost .cost_img_desc .mo_scroll img {
+    display: block;
+    width: 100%;
+  }
+
+  .cost_img_desc .col-2 {
+    --mo-mg-t: .5357rem;
+    padding-top:1.4286rem;
+    padding-right:1.4286rem ;
+  }
+  .car_cost .cost_img_desc + .cost_img_desc {
+    margin-top: 1.4286rem;
+  }
+  .car_cost .cost_img_desc + .cost_img_desc .img_cont_box {
+    margin-top: .7143rem;
 }
-
-
-
-
-
 
 
 
